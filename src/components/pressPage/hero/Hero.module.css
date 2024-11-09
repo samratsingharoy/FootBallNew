@@ -1,0 +1,152 @@
+.container {
+  padding-bottom: 1rem;
+}
+.header {
+  font-weight: 700;
+  font-size: 4.5vw;
+  margin-bottom: 0.5rem;
+}
+.wrapper {
+  background-image: url("/images/presspage/pressHeroBg.jpeg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem 0.5rem;
+  height: 55vw;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 56.75%, #000 92.74%),
+    url("/images/presspage/pressHeroBg.jpeg") lightgray 50% / cover no-repeat;
+
+  border-radius: var(--global-radius);
+}
+
+.linkContainer {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.725) 0%,
+    rgba(153, 153, 153, 0.754) 100%
+  );
+  width: fit-content;
+  padding: 0.1rem 0.3rem;
+  border-radius: 0.4rem;
+  margin-left: 0.7rem;
+}
+.linkText {
+  text-align: center;
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+.linkArrow {
+  width: 0.6rem;
+}
+
+.content {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.85);
+  font-weight: 700;
+  font-size: 5vw;
+  width: 80%;
+}
+
+@media only screen and (min-width: 375px) {
+  .wrapper {
+    padding: 1rem 1rem;
+    box-shadow: 5px 5px 9px rgba(197, 193, 193, 0.2);
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .linkText {
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 700;
+  }
+}
+/* Small devices such as large phones (640px and up) */
+@media only screen and (min-width: 640px) {
+  .content {
+    font-size: 4.5vw;
+    width: 80%;
+  }
+}
+
+/* Medium devices such as tablets (768px and up) */
+@media only screen and (min-width: 768px) {
+  .wrapper {
+    padding-top: 2rem;
+  }
+  .linkText {
+    font-size: 1rem;
+  }
+  .linkContainer {
+    padding: 0.3rem 0.5rem;
+    border-radius: 0.6rem;
+  }
+  .linkArrow {
+    width: 0.7rem;
+  }
+}
+
+/*(900px and up) */
+@media only screen and (min-width: 900px) {
+}
+
+/* Large devices such as laptops (1024px and up) */
+@media only screen and (min-width: 1024px) {
+  .wrapper {
+    height: calc(100vh - 2rem - 1.4rem - 6rem - 4vw);
+    /* min-height: 30rem; */
+    height: 70vh;
+  }
+  .linkText {
+    font-size: 1.1rem;
+  }
+  .linkContainer {
+    gap: 0.4rem;
+
+    padding: 0.3rem 0.5rem;
+    border-radius: 0.6rem;
+    margin-left: 0.7rem;
+  }
+  .linkArrow {
+    width: 0.8rem;
+  }
+  .headerContainer {
+    height: 4vw;
+    overflow: hidden;
+    /* background-color: salmon; */
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* Largest devices such as desktops (1280px and up) */
+@media only screen and (min-width: 1280px) {
+  .headerContainer {
+    margin-bottom: 2.2rem;
+  }
+  .wrapper {
+    height: calc(100vh - 2rem - 1.4rem - 6rem - 4vw -2.7rem);
+    height: 80vh;
+    /* min-height: 30rem; */
+  }
+  .linkContainer {
+    gap: 1rem;
+    padding-top: 0.5rem;
+    border-radius: 1rem;
+    margin-left: 3rem;
+  }
+  .linkText {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+  }
+  .linkArrow {
+    width: 1.2rem;
+  }
+}
+
+/*  (1350px and up) */
+@media only screen and (min-width: 1350px) {
+}

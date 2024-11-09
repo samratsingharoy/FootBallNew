@@ -1,0 +1,187 @@
+.container {
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.header {
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+  font-weight: 700;
+}
+
+.linkContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  width: 10rem;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.51) 0%,
+    rgba(153, 153, 153, 0.51) 100%
+  );
+  padding: 0.3rem 0;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+}
+.linkText {
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+.linkArrow {
+  width: 1rem;
+}
+/* --Cards-- */
+.cardContainer {
+  width: 100%;
+  overflow: hidden;
+}
+
+.cardWrapper {
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (min-width: 375px) {
+}
+
+@media only screen and (min-width: 480px) {
+  .header {
+    font-size: 1.7rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .linkContainer {
+    gap: 0.6rem;
+    width: 11rem;
+
+    padding: 0.3rem 0;
+    border-radius: 0.25rem;
+  }
+}
+/* Small devices such as large phones (640px and up) */
+@media only screen and (min-width: 640px) {
+  .container {
+    margin-top: 2rem;
+  }
+  .header {
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .linkContainer {
+    gap: 0.8rem;
+    width: 12.5rem;
+
+    padding: 0.3rem 0;
+    border-radius: 0.25rem;
+  }
+  .linkText {
+    font-size: 0.9rem;
+  }
+  .linkArrow {
+    width: 1.1rem;
+  }
+  .cardContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1.5rem;
+  }
+}
+
+/* Medium devices such as tablets (768px and up) */
+@media only screen and (min-width: 768px) {
+  .header {
+    font-size: 2.2rem;
+    margin-bottom: 0.8rem;
+  }
+  .linkContainer {
+    gap: 1rem;
+    width: 13rem;
+
+    padding: 0.3rem 0;
+    border-radius: 0.3rem;
+  }
+}
+
+/*(900px and up) */
+@media only screen and (min-width: 900px) {
+  .header {
+    font-size: 2.7rem;
+    margin-bottom: 0.8rem;
+  }
+  .linkContainer {
+    gap: 1rem;
+    width: 15rem;
+
+    padding: 0.3rem 0;
+    border-radius: 0.3rem;
+  }
+  .linkText {
+    font-size: 1rem;
+  }
+  .linkArrow {
+    width: 1.2rem;
+  }
+  .cardContainer {
+    gap: 2rem;
+  }
+}
+
+/* Large devices such as laptops (1024px and up) */
+@media only screen and (min-width: 1024px) {
+  .header {
+    font-size: 3rem;
+    margin-bottom: 0.8rem;
+  }
+  .linkContainer {
+    gap: 1rem;
+    width: 17rem;
+
+    padding: 0.3rem 0;
+    border-radius: 0.3rem;
+  }
+  .linkText {
+    font-size: 1.2rem;
+  }
+  .linkArrow {
+    width: 1.3rem;
+  }
+}
+
+/* Largest devices such as desktops (1280px and up) */
+@media only screen and (min-width: 1280px) {
+  .container {
+    margin-top: 3rem;
+  }
+  .header {
+    font-size: 3rem;
+    margin-bottom: 0.8rem;
+  }
+  .linkContainer {
+    gap: 1rem;
+    width: 19rem;
+
+    padding: 0.3rem 0;
+    border-radius: 0.45rem;
+    margin-bottom: 1rem;
+  }
+  .linkText {
+    font-size: 1.5rem;
+  }
+  .linkArrow {
+    width: 1.3rem;
+  }
+}
+
+/*  (1350px and up) */
+@media only screen and (min-width: 1440px) {
+  .cardContainer {
+    gap: 2.5rem;
+  }
+}

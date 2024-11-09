@@ -1,0 +1,204 @@
+:root {
+  --icon-size: 0.7rem;
+  --icon-parent-size: 1.4rem;
+}
+.container,
+.mid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.container {
+  padding: 1.3rem 3%;
+  gap: 1.5rem;
+}
+.midContentContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logoImage {
+  width: 4rem;
+}
+
+.midContent {
+  font-weight: 200;
+  text-align: center;
+  font-size: 0.7rem;
+  width: 72%;
+}
+
+.fbIcon,
+.twitterIcon,
+.ytIcon,
+.instaIcon,
+.linkedinIcon {
+  font-size: var(--icon-size);
+  color: white;
+  width: var(--icon-parent-size);
+  height: var(--icon-parent-size);
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fbIcon {
+  background-color: #3b5998;
+}
+.twitterIcon {
+  background-color: #1da1f2;
+}
+.ytIcon {
+  background-color: #cd201f;
+}
+.instaIcon {
+  background-color: #ff17bd;
+}
+.linkedinIcon {
+  background-color: #0077b5;
+}
+.right {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.leftTop {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+.modRightContainer {
+  width: fit-content;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.leftContent {
+  font-weight: 700;
+  font-size: 0.7rem;
+}
+.mainRightContent {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.footerLink {
+  font-weight: 200;
+  font-size: 0.8rem;
+  text-wrap: nowrap;
+}
+
+@media only screen and (min-width: 375px) {
+}
+
+@media only screen and (min-width: 480px) {
+  .container {
+    padding: 1.3rem 5%;
+    gap: 1.5rem;
+  }
+}
+/* Small devices such as large phones (640px and up) */
+@media only screen and (min-width: 640px) {
+  .container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .right {
+    width: fit-content;
+  }
+  .left {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+  .footerLink {
+    text-wrap: nowrap;
+  }
+}
+
+/* Medium devices such as tablets (768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/*(900px and up) */
+@media only screen and (min-width: 900px) {
+  .leftContent {
+    font-size: 0.9rem;
+  }
+  .socialIcon {
+    width: 1.2rem;
+  }
+  .mid {
+    gap: 0.4rem;
+  }
+  .logoImage {
+    width: 5rem;
+  }
+
+  .midContent {
+    font-weight: 200;
+    text-align: center;
+    font-size: 0.8rem;
+    width: 60%;
+  }
+  .footerLink {
+    font-weight: 200;
+    font-size: 0.9rem;
+  }
+}
+
+/* Large devices such as laptops (1024px and up) */
+@media only screen and (min-width: 1024px) {
+  .midContent {
+    font-weight: 200;
+    text-align: center;
+    font-size: 0.8rem;
+    width: 50%;
+  }
+}
+
+/* Largest devices such as desktops (1280px and up) */
+@media only screen and (min-width: 1280px) {
+  .leftContent {
+    font-size: 1.5rem;
+  }
+  .socialIcon {
+    width: 1.5rem;
+  }
+  .mid {
+    gap: 0.4rem;
+  }
+  .logoImage {
+    width: 8rem;
+  }
+
+  .midContent {
+    font-weight: 200;
+    text-align: center;
+    font-size: 0.93rem;
+    width: 20rem;
+  }
+  .footerLink {
+    font-weight: 200;
+    font-size: 1.5rem;
+  }
+  :root {
+    --icon-size: 0.94rem;
+    --icon-parent-size: 1.9rem;
+  }
+}
+
+/*  (1350px and up) */
+@media only screen and (min-width: 1350px) {
+  .container {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+}

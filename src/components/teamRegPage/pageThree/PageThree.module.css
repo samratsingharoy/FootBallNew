@@ -1,0 +1,224 @@
+:root {
+  --big-table-columns: 1.5fr;
+  --med-table-columns: 1fr;
+  --small-table-columns: 0.75fr;
+  --player-info-table-column-gap: 0.15rem;
+}
+.container {
+  margin-bottom: 10vw;
+}
+.wrapper {
+  border-radius: 0.3rem;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.51) 0%,
+    rgba(153, 153, 153, 0.51) 100%
+  );
+  backdrop-filter: blur(2px);
+
+  padding: 1rem 0.2rem;
+}
+
+.header {
+  font-size: 3.8vw;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.tableHeaderContainer {
+  width: 100%;
+  display: grid;
+  /* grid-template-columns: 2fr 0.5fr 0.5fr 2fr 2fr 0.5fr 1fr 0.5fr; */
+  grid-template-columns:
+    var(--big-table-columns) minmax(0, var(--small-table-columns)) minmax(
+      0,
+      var(--small-table-columns)
+    )
+    var(--big-table-columns)
+    var(--big-table-columns) minmax(0, var(--small-table-columns))
+    var(--med-table-columns) minmax(0, var(--small-table-columns));
+  gap: var(--player-info-table-column-gap);
+  margin-bottom: 0.6rem;
+}
+.headerColumn {
+  background-color: #272727;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0.2rem 2px;
+  border-radius: 2px;
+}
+
+.tableheaderText {
+  font-size: 1.8vw;
+  text-align: center;
+  font-weight: 600;
+  text-wrap: wrap;
+}
+.tablesubHeaderText {
+  font-size: 1.7vw;
+  text-align: center;
+  font-weight: 300;
+}
+
+.tableRowContainer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--player-info-table-column-gap);
+}
+.btnContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3vw;
+}
+.btn {
+  background: radial-gradient(
+    121.11% 50% at 50% 50%,
+    rgba(28, 28, 28, 0.88) 0%,
+    #0d0d0d 100%
+  );
+  border: none;
+  outline: none;
+  border-radius: 0.6vw;
+  width: 50%;
+  padding: 1.2vw;
+  font-weight: 600;
+  font-size: 4vw;
+}
+
+@media only screen and (min-width: 375px) {
+}
+
+@media only screen and (min-width: 480px) {
+  .wrapper {
+    border-radius: 0.3rem;
+    padding: 1.2rem 0.4rem;
+  }
+}
+/* Small devices such as large phones (640px and up) */
+@media only screen and (min-width: 640px) {
+  .headerColumn {
+    padding: 0.2rem 2px;
+    border-radius: 4px;
+  }
+
+  .wrapper {
+    border-radius: 0.4rem;
+    padding: 1.3rem 0.7rem;
+  }
+  :root {
+    --player-info-table-column-gap: 0.3rem;
+  }
+  .tablesubHeaderText {
+    font-size: 1.3vw;
+  }
+  .headerColumn {
+    height: 5.5vw;
+  }
+  .header {
+    font-size: 3.4vw;
+    margin-bottom: 1rem;
+  }
+  .btn {
+    border-radius: 0.6vw;
+
+    padding: 1.2vw;
+
+    font-size: 3vw;
+  }
+}
+
+/* Medium devices such as tablets (768px and up) */
+@media only screen and (min-width: 768px) {
+  :root {
+    --player-info-table-column-gap: 0.4rem;
+  }
+  .header {
+    font-size: 2.8vw;
+  }
+}
+
+/*(900px and up) */
+@media only screen and (min-width: 900px) {
+  .tableheaderText {
+    font-size: 1.6vw;
+  }
+  .tablesubHeaderText {
+    font-size: 1.2vw;
+  }
+  .header {
+    font-size: 2.6vw;
+  }
+  .btn {
+    font-size: 2.5vw;
+  }
+}
+
+/* Large devices such as laptops (1024px and up) */
+@media only screen and (min-width: 1024px) {
+  .wrapper {
+    border-radius: 0.4rem;
+    padding: 2.3rem 1.2rem;
+  }
+  .tableHeaderContainer {
+    margin-bottom: 1.5rem;
+  }
+  .tablesubHeaderText {
+    font-size: 1.2vw;
+  }
+}
+
+/* Largest devices such as desktops (1280px and up) */
+@media only screen and (min-width: 1280px) {
+  .headerColumn {
+    height: 4.3vw;
+  }
+  .header {
+    font-size: 2.1vw;
+  }
+
+  .tablesubHeaderText {
+    font-size: 1vw;
+  }
+  .tableheaderText {
+    font-size: 1.4vw;
+    padding: 0 0.2rem;
+  }
+  .wrapper {
+    border-radius: 0.4rem;
+    padding: 3vw 2.3vw;
+  }
+  .btn {
+    font-size: 2.2vw;
+  }
+}
+
+/*  (1350px and up) */
+@media only screen and (min-width: 1440px) {
+  .header {
+    font-size: 2vw;
+  }
+  .wrapper {
+    border-radius: 0.4rem;
+    padding: 3vw 3vw;
+  }
+  .headerColumn {
+    height: 4vw;
+  }
+  .tablesubHeaderText {
+    font-size: 0.8vw;
+  }
+  .tableheaderText {
+    font-size: 1.3vw;
+    padding: 0 0.2rem;
+  }
+  :root {
+    --big-table-columns: 2fr;
+    --med-table-columns: 1fr;
+    --small-table-columns: 0.75fr;
+    --player-info-table-column-gap: 0.5rem;
+  }
+}

@@ -1,0 +1,265 @@
+.container {
+  width: calc(100vw - 2 * var(--global-leftright-padding));
+  padding: 0 1rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cardWrapper {
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 45vw;
+  display: flex;
+  justify-content: flex-end;
+  border-radius: 0.6rem;
+  overflow: hidden;
+}
+.innerWrapper {
+  width: 80%;
+  background: rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(4.5px);
+  padding-top: 8%;
+  padding-left: 1rem;
+  padding-right: 0.8rem;
+}
+.leftArrow,
+.rightArrow {
+  width: 1rem;
+  position: absolute;
+  top: 43%;
+}
+.leftArrow {
+  left: 0;
+}
+.rightArrow {
+  right: 0;
+}
+.title {
+  font-size: 3.6vw;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.content {
+  font-weight: 700;
+  font-size: 2.8vw;
+}
+.btnContainer {
+  background-color: #f2f2f2;
+  padding: 0.3rem;
+  margin-top: 0.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  border-radius: 0.4rem;
+}
+.btn {
+  font-size: 3vw;
+  font-weight: 700;
+  background: radial-gradient(
+    121.11% 50% at 50% 50%,
+    rgba(28, 28, 28, 0.88) 0%,
+    #0d0d0d 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  box-shadow: 2px 2px 4px 0px rgba(206, 206, 206, 0.25);
+  -webkit-text-fill-color: transparent;
+}
+@media only screen and (min-width: 375px) {
+}
+
+@media only screen and (min-width: 480px) {
+  .cardWrapper {
+    height: 42vw;
+
+    border-radius: 0.6rem;
+  }
+  .innerWrapper {
+    width: 70%;
+    padding-top: 7%;
+    padding-left: 1rem;
+    padding-right: 0.8rem;
+  }
+  .title {
+    font-size: 3.4vw;
+
+    margin-bottom: 0.5rem;
+  }
+  .content {
+    font-size: 2.6vw;
+  }
+  .btnContainer {
+    padding: 0.3rem;
+    margin-top: 1.3rem;
+    border-radius: 0.4rem;
+  }
+  .btn {
+    font-size: 2.5vw;
+  }
+
+  .leftArrow,
+  .rightArrow {
+    width: 1.5rem;
+    position: absolute;
+  }
+  .leftArrow {
+    left: 0;
+  }
+  .rightArrow {
+    right: 0;
+  }
+}
+/* Small devices such as large phones (640px and up) */
+@media only screen and (min-width: 640px) {
+  .cardWrapper {
+    height: 36vw;
+    border-radius: 0.6rem;
+    width: 90%;
+  }
+  .innerWrapper {
+    width: 67%;
+    padding-top: 7%;
+    padding-left: 1rem;
+    padding-right: 0.8rem;
+  }
+  .title {
+    font-size: 3vw;
+    margin-bottom: 0.5rem;
+  }
+  .content {
+    font-size: 2.3vw;
+  }
+  .btnContainer {
+    padding: 0.3rem;
+    margin-top: 1.3rem;
+    border-radius: 0.4rem;
+  }
+  .btn {
+    font-size: 2vw;
+  }
+}
+
+/* Medium devices such as tablets (768px and up) */
+@media only screen and (min-width: 768px) {
+  .cardWrapper {
+    height: 34vw;
+  }
+  .innerWrapper {
+    width: 62%;
+    padding-top: 7%;
+    padding-left: 1rem;
+    padding-right: 0.8rem;
+  }
+  .title {
+    font-size: 2.8vw;
+    margin-bottom: 1.2rem;
+  }
+  .content {
+    font-size: 1.8vw;
+  }
+  .btnContainer {
+    padding: 0.3rem;
+    margin-top: 1.3rem;
+    border-radius: 0.4rem;
+  }
+  .btn {
+    font-size: 2vw;
+  }
+}
+
+/*(900px and up) */
+@media only screen and (min-width: 900px) {
+  .cardWrapper {
+    height: 32vw;
+  }
+  .innerWrapper {
+    width: 60%;
+    padding-top: 7%;
+    padding-left: 1rem;
+    padding-right: 0.8rem;
+  }
+  .title {
+    font-size: 2.6vw;
+    margin-bottom: 1.5rem;
+  }
+  .content {
+    font-size: 1.6vw;
+  }
+  .btnContainer {
+    padding: 0.3rem;
+    margin-top: 1.5rem;
+    border-radius: 0.4rem;
+  }
+  .btn {
+    font-size: 1.8vw;
+  }
+  .leftArrow,
+  .rightArrow {
+    width: 1.8rem;
+    position: absolute;
+  }
+  .leftArrow {
+    left: 2%;
+  }
+  .rightArrow {
+    right: 2%;
+  }
+}
+
+/* Large devices such as laptops (1024px and up) */
+@media only screen and (min-width: 1024px) {
+}
+
+/* Largest devices such as desktops (1280px and up) */
+@media only screen and (min-width: 1280px) {
+  .cardWrapper {
+    height: 28vw;
+    width: 88%;
+  }
+  .innerWrapper {
+    width: 58%;
+    padding-right: 2rem;
+  }
+  .title {
+    font-size: 2vw;
+    margin-bottom: 1.9rem;
+  }
+  .content {
+    font-size: 1.3vw;
+  }
+  .btnContainer {
+    padding: 0.3rem;
+    margin-top: 1.5rem;
+    border-radius: 0.4rem;
+  }
+  .btn {
+    font-size: 1.3vw;
+  }
+  .leftArrow,
+  .rightArrow {
+    width: 2.3rem;
+    position: absolute;
+  }
+  .leftArrow {
+    left: 2%;
+  }
+  .rightArrow {
+    right: 2%;
+  }
+}
+
+/*  (1350px and up) */
+@media only screen and (min-width: 1440px) {
+  .cardWrapper {
+    height: 27vw;
+    width: 85%;
+  }
+  .leftArrow,
+  .rightArrow {
+    top: 46%;
+  }
+}

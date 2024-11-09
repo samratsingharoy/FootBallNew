@@ -1,0 +1,170 @@
+.container {
+  padding: 0.3rem;
+  height: 100vh;
+  min-height: fit-content;
+}
+
+.topParaContainer {
+  margin-bottom: 1.3rem;
+}
+.content {
+  font-size: 3.1vw;
+  font-weight: 400;
+}
+.listHeader {
+  font-weight: 700;
+  font-size: 3.5vw;
+  margin-bottom: 0.4rem;
+}
+.listContainer {
+  padding-left: 0.5rem;
+}
+.eligContainer {
+  margin-bottom: 0.7rem;
+}
+
+.listContainer li {
+  margin-bottom: 0.4rem;
+}
+
+@media only screen and (min-width: 480px) {
+  .topParaContainer {
+    margin-bottom: 1.8rem;
+  }
+  .content {
+    font-size: 2.8vw;
+  }
+  .listHeader {
+    font-size: 3vw;
+    margin-bottom: 0.4rem;
+  }
+  .eligContainer {
+    margin-bottom: 0.9rem;
+  }
+  .listContainer li {
+    margin-bottom: 0.6rem;
+  }
+}
+/* Small devices such as large phones (640px and up) */
+@media only screen and (min-width: 640px) {
+  .topParaContainer {
+    margin-bottom: 2rem;
+  }
+  .content {
+    font-size: 2.5vw;
+  }
+  .listHeader {
+    font-size: 2.8vw;
+    margin-bottom: 0.4rem;
+  }
+  .eligContainer {
+    margin-bottom: 1.1rem;
+  }
+  .listContainer li {
+    margin-bottom: 0.8rem;
+  }
+  .listContainer {
+    padding-left: 3vw;
+  }
+}
+
+/* Medium devices such as tablets (768px and up) */
+@media only screen and (min-width: 768px) {
+  .content {
+    font-size: 2.2vw;
+  }
+  .listHeader {
+    font-size: 2.6vw;
+    margin-bottom: 0.4rem;
+  }
+}
+
+/*(900px and up) */
+@media only screen and (min-width: 900px) {
+  .listContainer {
+    padding-left: 2.6vw;
+  }
+  .topParaContainer {
+    margin-bottom: 2.4rem;
+  }
+  .content {
+    font-size: 2vw;
+  }
+  .listHeader {
+    font-size: 2.4vw;
+    margin-bottom: 0.6rem;
+  }
+  .eligContainer {
+    margin-bottom: 1.3rem;
+  }
+}
+
+/* Large devices such as laptops (1024px and up) */
+@media only screen and (min-width: 1024px) {
+  .container {
+    padding: 0.9rem;
+  }
+  .topParaContainer {
+    margin-bottom: 2.8rem;
+  }
+  .content {
+    font-size: 1.9vw;
+  }
+  .listHeader {
+    font-size: 2.3vw;
+    margin-bottom: 0.6rem;
+  }
+  .eligContainer {
+    margin-bottom: 1.5rem;
+  }
+  .listContainer li {
+    margin-bottom: 1rem;
+  }
+}
+
+/* Largest devices such as desktops (1280px and up) */
+@media only screen and (min-width: 1280px) {
+  .container {
+    padding: 1.5rem;
+  }
+  .topParaContainer {
+    margin-bottom: 2.8rem;
+  }
+  .content {
+    font-size: 1.7vw;
+  }
+  .listHeader {
+    font-size: 2.3vw;
+    margin-bottom: 0.6rem;
+  }
+  .eligContainer {
+    margin-bottom: 1.5rem;
+  }
+  .listContainer li {
+    margin-bottom: 1rem;
+  }
+  .listContainer {
+    padding-left: 2vw;
+  }
+}
+
+/*  (1350px and up) */
+@media only screen and (min-width: 1440px) {
+  .topParaContainer {
+    margin-bottom: 3rem;
+  }
+  .content {
+    font-size: 1.3vw;
+  }
+  .listHeader {
+    font-size: 1.9vw;
+    /* font-size: 1.5rem; */
+    margin-bottom: 1rem;
+  }
+  .listContainer li {
+    margin-bottom: 1.4rem;
+  }
+  .eligContainer {
+    margin-bottom: 1.8rem;
+  }
+}

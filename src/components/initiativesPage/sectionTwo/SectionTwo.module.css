@@ -1,0 +1,67 @@
+.container {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+.cardContainer {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 0.9rem;
+}
+.header {
+  font-size: var(--global-header-font);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+@media only screen and (min-width: 375px) {
+}
+
+@media only screen and (min-width: 480px) {
+}
+/* Small devices such as large phones (640px and up) */
+@media only screen and (min-width: 640px) {
+  .cardContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .container {
+    margin-top: 2.5rem;
+  }
+  .header {
+    margin-bottom: 0.8rem;
+  }
+}
+
+/* Medium devices such as tablets (768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/*(900px and up) */
+@media only screen and (min-width: 900px) {
+}
+
+/* Large devices such as laptops (1024px and up) */
+@media only screen and (min-width: 1024px) {
+  .container {
+    margin-top: 3rem;
+  }
+  .header {
+    margin-bottom: 1rem;
+  }
+}
+
+/* Largest devices such as desktops (1280px and up) */
+@media only screen and (min-width: 1280px) {
+}
+
+/*  (1350px and up) */
+@media only screen and (min-width: 1440px) {
+  .container {
+    margin-top: 4rem;
+  }
+  .cardContainer {
+    gap: 1.4rem;
+  }
+  .header {
+    margin-bottom: 1.5rem;
+  }
+}

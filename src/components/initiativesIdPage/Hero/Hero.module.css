@@ -1,0 +1,130 @@
+:root {
+  --arrow-dist: -3px;
+  --arrow-width: 1rem;
+}
+
+.container {
+  margin-bottom: 1.2rem;
+}
+.pagename {
+  font-size: var(--global-header-font);
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+.rightArrowContainer,
+.leftArrowContainer {
+  position: absolute;
+}
+
+.leftArrow,
+.rightArrow {
+  width: var(--arrow-width);
+}
+.leftArrowContainer {
+  left: var(--arrow-dist);
+}
+
+.rightArrowContainer {
+  right: var(--arrow-dist);
+}
+
+.imageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.heroImage {
+  width: 93%;
+  height: 35vw;
+  border-radius: 0.2rem;
+  object-fit: cover;
+}
+.header {
+  font-size: 5vw;
+  font-weight: 700;
+  width: 90%;
+  margin-bottom: 0.5rem;
+}
+
+@media only screen and (min-width: 375px) {
+}
+
+@media only screen and (min-width: 480px) {
+  .heroImage {
+    width: 95%;
+    height: 35vw;
+    border-radius: 0.2rem;
+  }
+  :root {
+    --arrow-dist: -5px;
+    --arrow-width: 1.2rem;
+  }
+}
+/* Small devices such as large phones (640px and up) */
+@media only screen and (min-width: 640px) {
+}
+
+/* Medium devices such as tablets (768px and up) */
+@media only screen and (min-width: 768px) {
+  .container {
+    margin-bottom: 1.8rem;
+  }
+}
+
+/*(900px and up) */
+@media only screen and (min-width: 900px) {
+  .pagename {
+    margin-bottom: 3rem;
+  }
+  .header {
+    font-size: 4.5vw;
+    width: 90%;
+    margin-bottom: 0.8rem;
+  }
+  .heroImage {
+    width: 97%;
+    height: 35vw;
+    border-radius: 0.3rem;
+  }
+  :root {
+    --arrow-dist: -14px;
+    --arrow-width: 1.4rem;
+  }
+}
+
+/* Large devices such as laptops (1024px and up) */
+@media only screen and (min-width: 1024px) {
+  .heroImage {
+    width: 100%;
+  }
+  :root {
+    --arrow-dist: -1.5rem;
+    --arrow-width: 1.6rem;
+  }
+}
+
+/* Largest devices such as desktops (1280px and up) */
+@media only screen and (min-width: 1280px) {
+  .header {
+    font-size: 3.8vw;
+    width: 90%;
+    margin-bottom: 0.8rem;
+  }
+  :root {
+    --arrow-dist: -2.5rem;
+    --arrow-width: 2rem;
+  }
+  .container {
+    margin-bottom: 2.5rem;
+  }
+}
+
+/*  (1350px and up) */
+@media only screen and (min-width: 1440px) {
+  :root {
+    --arrow-dist: -3rem;
+    --arrow-width: 2.5rem;
+  }
+}

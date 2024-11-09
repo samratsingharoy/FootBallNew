@@ -1,0 +1,103 @@
+.pagename {
+  font-size: var(--global-header-font);
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+.mainContainer {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 0.3rem;
+  padding: 0.7rem;
+  box-shadow: 0px 5.803px 11.606px 0px rgba(27, 27, 27, 0.16);
+  backdrop-filter: blur(29.01477813720703px);
+}
+.header {
+  font-weight: 800;
+  font-size: 5vw;
+  margin-bottom: 0.6rem;
+}
+.content {
+  font-weight: 400;
+  font-size: 3.6vw;
+  color: #d9d9d9;
+}
+
+@media only screen and (min-width: 375px) {
+  .content {
+    font-size: 3.3vw;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .mainContainer {
+    border-radius: 0.6rem;
+    padding: 1rem;
+  }
+}
+/* Small devices such as large phones (640px and up) */
+@media only screen and (min-width: 640px) {
+  .mainContainer {
+    border-radius: 0.6rem;
+    padding: 1.8rem 1.5rem;
+  }
+  .pagename {
+    margin-bottom: 2.2rem;
+  }
+  .header {
+    font-size: 4.8vw;
+    margin-bottom: 1rem;
+  }
+  .content {
+    font-size: 3vw;
+  }
+}
+
+/* Medium devices such as tablets (768px and up) */
+@media only screen and (min-width: 768px) {
+  .pagename {
+    margin-bottom: 2.5rem;
+  }
+  .mainContainer {
+    border-radius: 0.6rem;
+    padding: 2rem 1.8rem;
+  }
+  .content {
+    font-size: 2.7vw;
+  }
+}
+
+/*(900px and up) */
+@media only screen and (min-width: 900px) {
+  .content {
+    font-size: 2.3vw;
+  }
+  .header {
+    font-size: 4.6vw;
+    margin-bottom: 1rem;
+  }
+}
+
+/* Large devices such as laptops (1024px and up) */
+@media only screen and (min-width: 1024px) {
+}
+
+/* Largest devices such as desktops (1280px and up) */
+@media only screen and (min-width: 1280px) {
+  .mainContainer {
+    border-radius: 0.9rem;
+    padding: 2.5rem 2.5rem 3.7rem 2.5rem;
+  }
+  .pagename {
+    margin-bottom: 3.5rem;
+  }
+  .header {
+    font-size: 4.3vw;
+    margin-bottom: 1.6rem;
+  }
+  .content {
+    font-size: 2vw;
+  }
+}
+
+/*  (1350px and up) */
+@media only screen and (min-width: 1440px) {
+}

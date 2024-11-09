@@ -1,0 +1,119 @@
+.accContainer {
+  position: relative;
+  display: inline-block;
+  width: fit-content;
+}
+.accHeader {
+  font-size: 0.6rem;
+  text-wrap: nowrap;
+  font-weight: 700;
+}
+.accordianContainer {
+  cursor: pointer;
+  font-size: 1.5rem;
+  background-color: #f2f2f2;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+.headerCotainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.downArrow {
+  width: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.listContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  list-style-type: none;
+  padding-top: 0.5rem;
+  font-size: 0.6rem;
+  gap: 0.1rem;
+}
+.list {
+  opacity: 0;
+  height: 0; /* Initially hidden */
+  overflow: hidden; /* Prevent content from showing when height is 0 */
+  visibility: hidden; /* Completely hide the element */
+  border-top: 2px solid #ffc700;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  color: white;
+  transition: opacity 0.5s ease-in-out, height 0.5s ease-in-out, visibility 0.5s;
+}
+
+.accContainer:hover .list {
+  opacity: 1;
+  height: auto; /* Allows the list to expand */
+  visibility: visible; /* Make it visible */
+  /* Temporarily sets height to auto to expand, then once it's animated, height is set based on content */
+}
+
+.accContainer:hover .downArrow {
+  rotate: 180deg;
+}
+
+@media only screen and (min-width: 375px) {
+}
+
+@media only screen and (min-width: 480px) {
+  .accHeader {
+    font-size: 2vw;
+  }
+  .listContainer {
+    padding-top: 0.5rem;
+    font-size: 1.8vw;
+    gap: 0.1rem;
+  }
+}
+/* Small devices such as large phones (640px and up) */
+@media only screen and (min-width: 640px) {
+}
+
+/* Medium devices such as tablets (768px and up) */
+@media only screen and (min-width: 768px) {
+  .headerCotainer {
+    gap: 0.3rem;
+  }
+}
+
+/*(900px and up) */
+@media only screen and (min-width: 900px) {
+}
+
+/* Large devices such as laptops (1024px and up) */
+@media only screen and (min-width: 1024px) {
+  .headerCotainer {
+    gap: 0.5rem;
+  }
+  .downArrow {
+    width: 1.5rem;
+  }
+  .list {
+    border-top: 3.5px solid #ffc700;
+  }
+}
+
+/* Largest devices such as desktops (1280px and up) */
+@media only screen and (min-width: 1280px) {
+  .downArrow {
+    width: 2rem;
+  }
+  .accHeader {
+    font-size: 1.4vw;
+  }
+  .listContainer {
+    font-size: 1.1vw;
+  }
+}
+
+/*  (1350px and up) */
+@media only screen and (min-width: 1440px) {
+}

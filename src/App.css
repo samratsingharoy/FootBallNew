@@ -1,0 +1,72 @@
+:root {
+  --global-radius: 0.5rem;
+  --global-leftright-padding: 0.5rem;
+  --contact-inner-width: 90%;
+  --global-header-font: 4.5vw;
+}
+
+.paddingLeftRight {
+  padding: 0 var(--global-leftright-padding);
+  height: auto;
+}
+.paddingLeft {
+  padding-left: var(--global-leftright-padding);
+}
+.mySlider {
+  width: 100%;
+}
+
+@media only screen and (min-width: 375px) {
+}
+
+@media only screen and (min-width: 480px) {
+  :root {
+    --global-radius: 0.9rem;
+    --global-leftright-padding: 0.9rem;
+  }
+}
+/* Small devices such as large phones (640px and up) */
+@media only screen and (min-width: 640px) {
+  :root {
+    --global-radius: 1rem;
+    --global-leftright-padding: 1.1rem;
+  }
+}
+
+/* Medium devices such as tablets (768px and up) */
+@media only screen and (min-width: 768px) {
+  :root {
+    --contact-inner-width: 86%;
+  }
+}
+
+/*(900px and up) */
+@media only screen and (min-width: 900px) {
+  :root {
+    --global-radius: 1rem;
+    --global-leftright-padding: 1.5rem;
+    --global-header-font: 4vw;
+  }
+}
+
+/* Large devices such as laptops (1024px and up) */
+@media only screen and (min-width: 1024px) {
+  :root {
+    --global-radius: 1.3rem;
+    --global-leftright-padding: 2rem;
+    --contact-inner-width: 84%;
+  }
+}
+
+/* Largest devices such as desktops (1280px and up) */
+@media only screen and (min-width: 1280px) {
+  :root {
+    --global-radius: 1.3rem;
+    --global-leftright-padding: 4rem;
+    --global-header-font: 3.3vw;
+  }
+}
+
+/*  (1350px and up) */
+@media only screen and (min-width: 1350px) {
+}

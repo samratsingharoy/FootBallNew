@@ -1,0 +1,119 @@
+:root {
+  --league-logo-dim: 2rem;
+}
+.container {
+  margin-top: 1rem;
+  margin-bottom: 0.6rem;
+  width: 100%;
+}
+.headerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+  margin-bottom: 0.8rem;
+}
+.leagueName {
+  font-weight: 700;
+  font-size: 4vw;
+}
+.leagueLogoContainer {
+  width: var(--league-logo-dim);
+  height: var(--league-logo-dim);
+  border-radius: 50%;
+  overflow: hidden;
+}
+.leagueLogo {
+  width: 100%;
+}
+.matchCardContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+.matchCardWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 375px) {
+}
+
+@media only screen and (min-width: 480px) {
+  .leagueName {
+    font-size: 3.8vw;
+  }
+  :root {
+    --league-logo-dim: 2rem;
+  }
+}
+/* Small devices such as large phones (640px and up) */
+@media only screen and (min-width: 640px) {
+  .headerContainer {
+    margin-bottom: 1.2rem;
+  }
+  .matchCardContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.6rem;
+    width: 100%;
+  }
+  .leagueName {
+    font-size: 3.2vw;
+  }
+  :root {
+    --league-logo-dim: 2rem;
+  }
+}
+
+/* Medium devices such as tablets (768px and up) */
+@media only screen and (min-width: 768px) {
+  .headerContainer {
+    margin-bottom: 1.7rem;
+  }
+}
+
+/*(900px and up) */
+@media only screen and (min-width: 900px) {
+  .matchCardContainer {
+    gap: 1.3rem;
+    width: 90%;
+  }
+  .leagueName {
+    font-size: 3vw;
+  }
+  :root {
+    --league-logo-dim: 3.2rem;
+  }
+  .headerContainer {
+    gap: 0.5rem;
+  }
+}
+
+/* Large devices such as laptops (1024px and up) */
+@media only screen and (min-width: 1024px) {
+}
+
+/* Largest devices such as desktops (1280px and up) */
+@media only screen and (min-width: 1280px) {
+  .matchCardContainer {
+    gap: 2rem;
+    width: 88%;
+  }
+  .leagueName {
+    font-size: 2.5vw;
+  }
+  :root {
+    --league-logo-dim: 3.5rem;
+  }
+}
+
+/*  (1350px and up) */
+@media only screen and (min-width: 1440px) {
+  .matchCardContainer {
+    gap: 2.5rem;
+  }
+}

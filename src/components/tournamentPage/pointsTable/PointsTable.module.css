@@ -1,0 +1,197 @@
+:root {
+  --table-border-radius: 0.2rem;
+  --bold-font-size: 4vw;
+}
+.container {
+  display: flex;
+  justify-content: center;
+}
+.wrapper {
+  background: var(--forms-bg);
+  backdrop-filter: blur(2px);
+  border-radius: 0.3rem;
+  padding: 1.5rem 0.5rem;
+  padding-bottom: 5rem;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.pointsTable {
+  width: 100%;
+  border-collapse: collapse;
+
+  color: white;
+  overflow: hidden;
+}
+
+.pointsTable th,
+.pointsTable td {
+  text-align: center;
+  padding: 0.3rem 2px;
+  background: var(--forms-selected-bg);
+}
+
+.addleftradius {
+  border-top-left-radius: var(--table-border-radius);
+  border-bottom-left-radius: var(--table-border-radius);
+}
+
+.addrightradius {
+  border-top-right-radius: var(--table-border-radius);
+  border-bottom-right-radius: var(--table-border-radius);
+}
+
+.nonBoldfont {
+  font-weight: 500;
+  font-size: 2.5vw;
+}
+
+.pointsTable th,
+.points,
+.pos {
+  font-weight: 700;
+  font-size: var(--bold-font-size);
+}
+.points {
+  color: #ffc700;
+}
+
+@media only screen and (min-width: 375px) {
+  :root {
+    --bold-font-size: clamp(0.8rem, 4vw, 1.1rem);
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .pointsTable {
+    width: 450px;
+  }
+  :root {
+    --bold-font-size: clamp(0.8rem, 4vw, 1rem);
+  }
+  .nonBoldfont {
+    font-size: 2.1vw;
+    font-size: clamp(0.6rem, 2.3vw, 0.7rem);
+  }
+}
+/* Small devices such as large phones (640px and up) */
+@media only screen and (min-width: 640px) {
+  .wrapper {
+    width: 90%;
+    border-radius: 0.6rem;
+  }
+  .pointsTable {
+    width: 400px;
+  }
+  .pointsTable th,
+  .pointsTable td {
+    padding: 0.7rem 2px;
+  }
+}
+
+/* Medium devices such as tablets (768px and up) */
+@media only screen and (min-width: 768px) {
+  .wrapper {
+    border-radius: 0.6rem;
+    padding: 0rem;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    width: 90%;
+  }
+  :root {
+    --bold-font-size: clamp(1rem, 4vw, 1.1rem);
+  }
+  .pointsTable {
+    width: 430px;
+  }
+  .nonBoldfont {
+    font-size: 2.1vw;
+    font-size: clamp(0.6rem, 2.3vw, 0.8rem);
+  }
+}
+
+/*(900px and up) */
+@media only screen and (min-width: 900px) {
+  .wrapper {
+    border-radius: 0.9rem;
+    padding-top: 3rem;
+    padding-bottom: 7rem;
+    width: 80%;
+  }
+  .addleftradius {
+    padding-left: 0 !important;
+  }
+  .pointsTable {
+    width: 500px;
+  }
+}
+
+/* Large devices such as laptops (1024px and up) */
+@media only screen and (min-width: 1024px) {
+  .wrapper {
+    border-radius: 1rem;
+    padding-top: 3rem;
+    padding-bottom: 7rem;
+    width: 80%;
+  }
+  .nonBoldfont {
+    font-size: 2.1vw;
+    font-size: clamp(0.6rem, 1.1vw, 0.8rem);
+  }
+  :root {
+    --bold-font-size: clamp(1rem, 1.8vw, 1.2rem);
+  }
+}
+
+/* Largest devices such as desktops (1280px and up) */
+@media only screen and (min-width: 1280px) {
+  .wrapper {
+    padding-bottom: 9rem;
+    width: 70%;
+  }
+  :root {
+    --table-border-radius: 0.3rem;
+    --bold-font-size: clamp(1rem, 1.8vw, 1.2rem);
+  }
+  .nonBoldfont {
+    font-size: 2.1vw;
+    font-size: clamp(0.6rem, 1vw, 0.9rem);
+  }
+}
+
+/*  (1440px and up) */
+@media only screen and (min-width: 1440px) {
+  .pointsTable {
+    width: 590px;
+  }
+  .wrapper {
+    width: 70%;
+    padding-bottom: 12rem;
+  }
+  .pointsTable th,
+  .pointsTable td {
+    padding: 0.8rem 2px;
+  }
+}
+
+/*  (1550px and up) */
+@media only screen and (min-width: 1550px) {
+  .pointsTable {
+    width: 70%;
+  }
+  .wrapper {
+    width: 60%;
+    padding-bottom: 12rem;
+  }
+  .pointsTable th,
+  .pointsTable td {
+    padding: 1rem 2px;
+  }
+  .nonBoldfont {
+    font-size: 0.8vw;
+  }
+  :root {
+    --bold-font-size: 1.2vw;
+  }
+}

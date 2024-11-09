@@ -1,0 +1,215 @@
+:root {
+  --team-logo-dim: 9vw;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.wrapper {
+  width: 90%;
+  background-color: rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  padding: 5.5vw 7vw;
+  border-radius: 0.5rem;
+}
+.liveContainer {
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+.liveText {
+  font-weight: 700;
+  color: var(--Live-Indicator);
+  font-size: 2.2vw;
+}
+
+.dot {
+  width: 2vw;
+}
+
+.minutes {
+  color: #9c9c9c;
+  font-weight: 700;
+  font-size: 2.5vw;
+}
+.teamImage {
+  width: var(--team-logo-dim);
+  height: var(--team-logo-dim);
+  object-fit: contain;
+}
+
+.mainContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+  width: 100%;
+}
+.teamContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 30%;
+}
+
+.scoresContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.9rem;
+  width: 30%;
+}
+
+.teamName {
+  font-size: 3.3vw;
+  font-weight: 700;
+  text-align: center;
+}
+.score {
+  font-weight: 700;
+  font-size: 4vw;
+}
+
+@media only screen and (min-width: 375px) {
+}
+
+@media only screen and (min-width: 480px) {
+  .teamName {
+    font-size: 3vw;
+  }
+  .score {
+    font-size: 3.8vw;
+  }
+  :root {
+    --team-logo-dim: 8.6vw;
+  }
+}
+/* Small devices such as large phones (640px and up) */
+@media only screen and (min-width: 640px) {
+  .wrapper {
+    width: 100%;
+    padding: 4.6vw 0vw;
+    height: 18vw;
+  }
+  .teamName {
+    font-size: 1.8vw;
+  }
+  .score {
+    font-size: 2.6vw;
+  }
+  .scoresContainer {
+    gap: 0.6rem;
+  }
+  :root {
+    --team-logo-dim: 4.5vw;
+  }
+
+  .liveText {
+    font-size: 1.5vw;
+  }
+
+  .dot {
+    width: 1.1vw;
+  }
+  .minutes {
+    font-size: 1.45vw;
+  }
+  .mainContainer {
+    gap: 0.2rem;
+  }
+}
+
+/* Medium devices such as tablets (768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/*(900px and up) */
+@media only screen and (min-width: 900px) {
+  .wrapper {
+    padding: 3vw 0vw;
+    height: 16vw;
+  }
+
+  .teamName {
+    font-size: 1.4vw;
+  }
+  .score {
+    font-size: 2.3vw;
+  }
+  .scoresContainer {
+    gap: 1.4rem;
+  }
+  :root {
+    --team-logo-dim: 5.4vw;
+  }
+
+  .liveText {
+    font-size: 1vw;
+  }
+
+  .dot {
+    width: 0.7vw;
+  }
+  .minutes {
+    font-size: 1.3vw;
+  }
+}
+
+/* Large devices such as laptops (1024px and up) */
+@media only screen and (min-width: 1024px) {
+}
+
+/* Largest devices such as desktops (1280px and up) */
+@media only screen and (min-width: 1280px) {
+  .wrapper {
+    padding: 2.2vw 0vw;
+    border-radius: 0.9vw;
+    height: 13.5vw;
+  }
+  .teamName {
+    font-size: 1.4vw;
+  }
+  .score {
+    font-size: 2.4vw;
+  }
+  .scoresContainer {
+    gap: 1.4rem;
+  }
+  :root {
+    --team-logo-dim: 5.4vw;
+  }
+  .teamLogoContainer {
+    margin-bottom: 0.3rem;
+  }
+
+  .liveText {
+    font-size: 0.7vw;
+  }
+
+  .dot {
+    width: 0.5vw;
+  }
+  .minutes {
+    font-size: 1vw;
+  }
+  .mainContainer {
+    width: 100%;
+    gap: 0;
+    justify-content: space-evenly;
+  }
+}
+
+/*  (1350px and up) */
+@media only screen and (min-width: 1440px) {
+}

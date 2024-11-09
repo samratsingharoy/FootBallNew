@@ -1,0 +1,219 @@
+:root {
+  --row-border-radius: 0.1rem;
+  --header-height: 6.5vw;
+  --content-height: 5.5vw;
+}
+.container {
+  display: flex;
+  margin-top: 1rem;
+  width: 100%;
+}
+.column {
+  text-align: center;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.headerContainer,
+.contentContainer {
+  background: var(--forms-selected-bg);
+}
+.headerContainer {
+  padding: 0.2rem;
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contentContainer {
+  height: var(--content-height);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0.2rem;
+}
+.headerContainer {
+  margin-bottom: 0.5rem;
+}
+
+.tableHeader {
+  font-size: 3.4vw;
+  font-weight: 600;
+  text-wrap: nowrap;
+}
+.matchDate {
+  font-size: 2.3vw;
+  font-weight: 600;
+  text-wrap: nowrap;
+}
+.content {
+  font-size: 2.6vw;
+  font-weight: 600;
+  text-wrap: nowrap;
+}
+.column1 .headerContainer,
+.column1 .contentContainer {
+  border-top-left-radius: var(--row-border-radius);
+  border-bottom-left-radius: var(--row-border-radius);
+  padding-left: 0.5rem;
+}
+
+.column5 .headerContainer,
+.column5 .contentContainer {
+  border-top-right-radius: var(--row-border-radius);
+  border-bottom-right-radius: var(--row-border-radius);
+  padding-right: 0.5rem;
+}
+
+@media only screen and (min-width: 375px) {
+  .tableHeader {
+    font-size: 3.3vw;
+  }
+  .headerContainer {
+    padding: 0 0.4rem;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .container {
+    margin-top: 1.5rem;
+  }
+  .column {
+    gap: 0.4rem;
+  }
+  .tableHeader {
+    font-size: 3vw;
+  }
+  .headerContainer {
+    padding: 0 0.6rem;
+  }
+  .matchDate {
+    font-size: 2vw;
+  }
+  .content {
+    font-size: 2.2vw;
+  }
+}
+/* Small devices such as large phones (640px and up) */
+@media only screen and (min-width: 640px) {
+  :root {
+    --row-border-radius: 0.25rem;
+    --header-height: 6vw;
+    --content-height: 5vw;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0;
+  }
+  .column {
+    width: 100%;
+  }
+  .tableHeader {
+    font-size: 2.78vw;
+  }
+  .headerContainer {
+    padding: 0 0.6rem;
+  }
+  .matchDate {
+    font-size: 1.6vw;
+  }
+  .content {
+    font-size: 1.9vw;
+  }
+}
+
+/* Medium devices such as tablets (768px and up) */
+@media only screen and (min-width: 768px) {
+  :root {
+    --row-border-radius: 0.3rem;
+    --header-height: 5.7vw;
+    --content-height: 4.8vw;
+  }
+  .tableHeader {
+    font-size: 2.5vw;
+  }
+  .headerContainer {
+    padding: 0 0.6rem;
+  }
+  .matchDate {
+    font-size: 1.5vw;
+  }
+  .content {
+    font-size: 1.7vw;
+  }
+}
+
+/*(900px and up) */
+@media only screen and (min-width: 900px) {
+}
+
+/* Large devices such as laptops (1024px and up) */
+@media only screen and (min-width: 1024px) {
+  :root {
+    --row-border-radius: 0.3rem;
+    --header-height: 4.8vw;
+    --content-height: 4.8vw;
+  }
+  .tableHeader {
+    font-size: 2.1vw;
+  }
+  .headerContainer {
+    padding: 0 0.6rem;
+  }
+  .matchDate {
+    font-size: 1.3vw;
+  }
+  .content {
+    font-size: 1.5vw;
+  }
+}
+
+/* Largest devices such as desktops (1280px and up) */
+@media only screen and (min-width: 1280px) {
+  :root {
+    --row-border-radius: 0.3rem;
+    --header-height: 3.4vw;
+    --content-height: 3.4vw;
+  }
+  .container {
+    width: 86%;
+  }
+  .tableHeader {
+    font-size: 1.7vw;
+  }
+  .headerContainer {
+    padding: 0 0.6rem;
+  }
+  .matchDate {
+    font-size: 1.1vw;
+  }
+  .content {
+    font-size: 1.3vw;
+  }
+}
+
+/*  (1350px and up) */
+@media only screen and (min-width: 1440px) {
+  :root {
+    --row-border-radius: 0.3rem;
+    --header-height: 3vw;
+    --content-height: 3vw;
+  }
+  .container {
+    width: 86%;
+  }
+  .tableHeader {
+    font-size: 1.4vw;
+  }
+  .headerContainer {
+    padding: 0 0.6rem;
+  }
+  .matchDate {
+    font-size: 0.8vw;
+  }
+  .content {
+    font-size: 1.1vw;
+  }
+}

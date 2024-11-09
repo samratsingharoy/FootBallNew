@@ -1,0 +1,163 @@
+.container {
+  width: 80%;
+  max-width: 320px;
+  background-color: #2a2a2a;
+  border-radius: 0.7rem;
+  padding: 0.9rem 0.7rem;
+}
+.header {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.time {
+  font-size: 0.7rem;
+  margin-bottom: 0.3rem;
+  font-weight: 500;
+}
+.content {
+  font-size: 0.8rem;
+  margin-bottom: 0.4rem;
+  font-weight: 500;
+}
+.dataWrapper hr {
+  border: 0.2px solid white;
+  margin-bottom: 0.7rem;
+}
+
+.footerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5rem;
+  gap: 0.3rem;
+}
+.footer {
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+.footerArrow {
+  width: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 375px) {
+}
+
+@media only screen and (min-width: 480px) {
+  .container {
+    width: 80%;
+    max-width: 400px;
+    background-color: #2a2a2a;
+    border-radius: 0.7rem;
+    padding: 0.9rem 0.7rem;
+  }
+}
+/* Small devices such as large phones (640px and up) */
+@media only screen and (min-width: 640px) {
+  .container {
+    width: 100%;
+    height: 100%;
+    padding: 0.3rem 0.7rem;
+    padding-top: 1vw;
+  }
+  .header {
+    font-size: 2.3vw;
+    margin-bottom: 0.5rem;
+  }
+
+  .time {
+    font-size: 1.2vw;
+    margin-bottom: 0.3rem;
+  }
+  .content {
+    font-size: 1.4vw;
+    margin-bottom: 0.4rem;
+  }
+  .footerContainer {
+    margin-top: 2vw;
+    gap: 0.3rem;
+  }
+  .footer {
+    font-size: 1.6vw;
+  }
+  .footerArrow {
+    width: 0.8rem;
+  }
+}
+
+/* Medium devices such as tablets (768px and up) */
+@media only screen and (min-width: 768px) {
+  .container {
+    padding-top: 1.5vw;
+  }
+  .time {
+    font-size: 1.3vw;
+    margin-bottom: 0.3rem;
+  }
+  .content {
+    font-size: 1.6vw;
+    margin-bottom: 0.4rem;
+  }
+  .footer {
+    font-size: 1.6vw;
+  }
+}
+
+/*(900px and up) */
+@media only screen and (min-width: 900px) {
+  .time {
+    font-size: 1.1vw;
+    margin-bottom: 0.3rem;
+  }
+  .content {
+    font-size: 1.4vw;
+    margin-bottom: 0.5rem;
+  }
+  .footer {
+    font-size: 1.6vw;
+  }
+  .footer {
+    font-size: 1.8vw;
+  }
+  .footerArrow {
+    width: 1rem;
+  }
+  .footerContainer {
+    margin-top: 3vw;
+    gap: 0.3rem;
+  }
+}
+
+/* Large devices such as laptops (1024px and up) */
+@media only screen and (min-width: 1024px) {
+  .container {
+    padding: 1.7vw 1.7vw;
+  }
+  .dataWrapper hr {
+    border: 0.2px solid white;
+    margin-bottom: 0.9rem;
+  }
+}
+
+/* Largest devices such as desktops (1280px and up) */
+@media only screen and (min-width: 1280px) {
+  .header {
+    font-size: 2.3vw;
+    margin-bottom: 1.08rem;
+  }
+  .dataWrapper hr {
+    border: 0.2px solid white;
+    margin-bottom: 1.1rem;
+  }
+  .footerArrow {
+    width: 1.7rem;
+  }
+}
+
+/*  (1350px and up) */
+@media only screen and (min-width: 1440px) {
+}

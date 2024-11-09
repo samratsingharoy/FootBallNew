@@ -1,0 +1,107 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+:root {
+  --dim: 2.5rem;
+}
+.header {
+  font-weight: 700;
+  line-height: 120%;
+}
+.socialIconsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+}
+
+.socialWrapper {
+  padding: 0.5rem;
+  border-radius: 0.1rem;
+  background-color: #272727;
+  width: var(--dim);
+  height: var(--dim);
+}
+
+.socialImage {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.1rem;
+}
+
+@media only screen and (min-width: 375px) {
+  .header {
+    font-size: 1.4rem;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+}
+/* Small devices such as large phones (640px and up) */
+@media only screen and (min-width: 640px) {
+}
+
+/* Medium devices such as tablets (768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/*(900px and up) */
+@media only screen and (min-width: 900px) {
+}
+
+/* Large devices such as laptops (1024px and up) */
+@media only screen and (min-width: 1024px) {
+  .header {
+    font-size: 1.6rem;
+  }
+  :root {
+    --dim: 2.8rem;
+  }
+}
+
+/* Largest devices such as desktops (1280px and up) */
+@media only screen and (min-width: 1280px) {
+  .container {
+    margin-top: 2rem;
+  }
+  .header {
+    font-size: 1.8rem;
+  }
+  :root {
+    --dim: 3.1rem;
+  }
+  .socialWrapper {
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+  }
+
+  .socialImage {
+    border-radius: 0.3rem;
+  }
+}
+
+/*  (1350px and up) */
+@media only screen and (min-width: 1440px) {
+  .container {
+    margin-top: 2.5rem;
+  }
+  .header {
+    font-size: 2rem;
+  }
+  :root {
+    --dim: 3.5rem;
+  }
+  .socialWrapper {
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+  }
+
+  .socialImage {
+    border-radius: 0.3rem;
+  }
+}

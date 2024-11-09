@@ -1,0 +1,120 @@
+.bgImage {
+  width: 100%;
+  border-radius: var(--global-radius);
+}
+.container {
+  position: relative;
+}
+
+.contentContainer {
+  position: absolute;
+  top: 15%;
+  left: 5%;
+}
+
+.header {
+  font-size: 1rem;
+  margin-bottom: 0.7rem;
+}
+
+.content {
+  font-size: 0.5rem;
+  width: 8rem;
+}
+
+@media only screen and (min-width: 375px) {
+  .header {
+    font-size: 4.5vw;
+    margin-bottom: 0.7rem;
+  }
+  .content {
+    font-size: 2.5vw;
+    width: 9rem;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .contentContainer {
+    top: 25%;
+    left: 5%;
+  }
+
+  .header {
+    font-size: 6vw;
+
+    margin-bottom: 4.2vw;
+  }
+
+  .content {
+    font-size: 2vw;
+    width: auto;
+  }
+}
+/* Small devices such as large phones (640px and up) */
+@media only screen and (min-width: 640px) {
+  .contentContainer {
+    top: 23%;
+    left: 5%;
+  }
+  .header {
+    font-size: 5.5vw;
+
+    margin-bottom: 4.2vw;
+  }
+
+  .content {
+    font-size: 1.8vw;
+    width: auto;
+  }
+}
+
+/* Medium devices such as tablets (768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/*(900px and up) */
+@media only screen and (min-width: 900px) {
+  .contentContainer {
+    top: 23%;
+    left: 5%;
+  }
+  .header {
+    font-size: 5vw;
+    margin-bottom: 3.9vw;
+  }
+
+  .content {
+    font-size: 1.6vw;
+    width: auto;
+  }
+}
+
+/* Large devices such as laptops (1024px and up) */
+@media only screen and (min-width: 1024px) {
+}
+
+/* Largest devices such as desktops (1280px and up) */
+@media only screen and (min-width: 1280px) {
+}
+
+/*  (1350px and up) */
+@media only screen and (min-width: 1440px) {
+  .container {
+    height: calc(100vh - 2rem - 1.4rem - 6rem);
+    overflow: hidden;
+    border-radius: var(--global-radius);
+  }
+  .contentContainer {
+    top: 26%;
+    left: 5%;
+  }
+  .header {
+    font-size: 4.8vw;
+    margin-bottom: 4vw;
+  }
+
+  .content {
+    font-size: 1.55vw;
+    width: auto;
+  }
+}

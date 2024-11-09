@@ -1,0 +1,319 @@
+.container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.wrapper {
+  width: 150%;
+}
+
+.ytImage {
+  width: 100%;
+}
+.card {
+  border-radius: 1rem;
+  padding: 0 1rem 0 0;
+}
+.cardWrapper {
+  background-color: bisque;
+  border-radius: 1rem;
+  background-color: #2c2c2c;
+  overflow: hidden;
+}
+
+.imageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.ytImage {
+  width: 100%;
+}
+.playBtn {
+  width: 4rem;
+}
+.playBtnContainer {
+  position: absolute;
+  width: 4.5rem;
+  height: 4.5rem;
+  background-color: #d3d3d3a9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  padding-left: 0.5rem;
+}
+
+.bottom {
+  padding: 0.3rem;
+}
+.videoType {
+  display: flex;
+  align-items: center;
+  margin-top: 0.3rem;
+  gap: 0.3rem;
+}
+
+.dotContainer,
+.typeHeaderContainer,
+.typeContentContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.typeHeader {
+  font-size: 0.4rem;
+  font-weight: 700;
+}
+.dot {
+  font-size: 0.4rem;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+.typeContent {
+  font-size: 0.3rem;
+}
+
+.title {
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  margin-bottom: 0.4rem;
+  font-weight: 700;
+}
+.content {
+  font-weight: 500;
+  font-size: 0.6rem;
+}
+
+.additionalDetails {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 1rem;
+}
+.addLeft {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.clockIcon,
+.commentIcon,
+.linkArrow {
+  width: 0.8rem;
+}
+.timeContainer,
+.commentsContainer {
+  display: flex;
+  align-items: center;
+  gap: 0.1rem;
+}
+.date,
+.commentText {
+  font-size: 0.5rem;
+}
+
+.addRight {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.linkText {
+  font-size: 0.6rem;
+}
+.linkArrow {
+  font-size: 0.8rem;
+}
+
+@media only screen and (min-width: 375px) {
+}
+
+@media only screen and (min-width: 480px) {
+  .wrapper {
+    width: 130%;
+  }
+  .bottom {
+    padding: 0.5rem 0.8rem;
+  }
+  .typeHeader {
+    font-size: 1.5vw;
+  }
+  .dot {
+    font-size: 1.5vw;
+  }
+  .typeContent {
+    font-size: 1.3vw;
+  }
+  .title {
+    font-size: 3vw;
+    margin-top: 1rem;
+    margin-bottom: 0.4rem;
+  }
+  .content {
+    font-size: 2vw;
+  }
+
+  .clockIcon,
+  .commentIcon,
+  .linkArrow {
+    width: 2.8vw;
+  }
+  .timeContainer,
+  .commentsContainer {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+  }
+  .date,
+  .commentText {
+    font-size: 1.8vw;
+  }
+
+  .linkText {
+    font-size: 2.2vw;
+  }
+  .linkArrow {
+    font-size: 0.8rem;
+  }
+}
+/* Small devices such as large phones (640px and up) */
+@media only screen and (min-width: 640px) {
+  .wrapper {
+    width: 120%;
+  }
+}
+
+/* Medium devices such as tablets (768px and up) */
+@media only screen and (min-width: 768px) {
+  .wrapper {
+    width: 110%;
+  }
+  .bottom {
+    padding: 0.5rem 0.8rem;
+  }
+  .typeHeader,
+  .dot {
+    font-size: 1.1vw;
+  }
+
+  .typeContent {
+    font-size: 0.9vw;
+  }
+
+  .title {
+    font-size: 2.2vw;
+    margin-top: 1rem;
+    margin-bottom: 0.7rem;
+  }
+  .content {
+    font-size: 1.5vw;
+  }
+
+  .clockIcon,
+  .commentIcon,
+  .linkArrow {
+    width: 1.6vw;
+  }
+  .timeContainer,
+  .commentsContainer {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+  }
+  .date,
+  .commentText {
+    font-size: 1.3vw;
+  }
+
+  .linkText {
+    font-size: 1.8vw;
+  }
+  .linkArrow {
+    width: 1rem;
+  }
+}
+
+/*(900px and up) */
+@media only screen and (min-width: 900px) {
+  .wrapper {
+    width: 115%;
+  }
+}
+
+/* Large devices such as laptops (1024px and up) */
+@media only screen and (min-width: 1024px) {
+  .wrapper {
+    width: 120%;
+  }
+  .bottom {
+    padding: 1rem 0.9rem;
+  }
+  .typeHeader,
+  .dot {
+    font-size: 1vw;
+  }
+
+  .typeContent {
+    font-size: 0.8vw;
+  }
+
+  .title {
+    font-size: 1.8vw;
+    margin-top: 1rem;
+    margin-bottom: 0.7rem;
+  }
+  .content {
+    font-size: 1.2vw;
+  }
+
+  .clockIcon,
+  .commentIcon,
+  .linkArrow {
+    width: 1vw;
+  }
+  .timeContainer,
+  .commentsContainer {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+  }
+  .date,
+  .commentText {
+    font-size: 0.8vw;
+  }
+
+  .linkText {
+    font-size: 1.3vw;
+  }
+  .linkArrow {
+    width: 1rem;
+  }
+}
+
+/* Largest devices such as desktops (1280px and up) */
+@media only screen and (min-width: 1280px) {
+  .cardWrapper {
+    border-radius: 1.5rem;
+  }
+  .ytImage {
+    width: 110%;
+  }
+  .linkArrow {
+    width: 1.6rem;
+  }
+}
+
+/*  (1350px and up) */
+@media only screen and (min-width: 1440px) {
+  .cardWrapper {
+    border-radius: 1.5rem;
+  }
+  .ytImage {
+    width: 110%;
+  }
+}

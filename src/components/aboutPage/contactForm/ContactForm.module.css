@@ -1,0 +1,196 @@
+:root {
+  --input-font: 3vw;
+}
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.6rem;
+  margin-bottom: 4rem;
+}
+.wrapper {
+  width: var(--contact-inner-width);
+}
+
+.header {
+  font-weight: 700;
+  font-size: 4.5vw;
+  margin-bottom: 1rem;
+}
+.contactForm {
+  width: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.51) 0%,
+    rgba(153, 153, 153, 0.51) 100%
+  );
+  border-radius: 0.3rem;
+  padding: 0.5rem 0.3rem 2rem 0.3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.userDetails {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.2rem;
+}
+.userInput,
+.comments {
+  width: 100%;
+  background-color: var(--forms-selected-bg);
+  display: flex;
+  align-items: center;
+  color: #f2f2f2;
+  font-size: var(--input-font);
+  padding: 0.2rem;
+  border: none;
+  outline: none;
+  border-radius: 0.1rem;
+  border: 1px solid #f2f2f2;
+}
+.userInput::placeholder,
+.comments::placeholder {
+  font-weight: 400;
+  font-size: var(--input-font);
+  color: #f2f2f2;
+}
+
+.commentsContainer {
+  width: 100%;
+}
+.comments {
+  resize: none;
+  padding-top: 0.4rem;
+  height: 20vw;
+}
+.btn {
+  font-weight: 600;
+  font-size: 3.5vw;
+  padding: 0.4rem;
+  border: none;
+  outline: none;
+  border-radius: 0.2rem;
+  background: radial-gradient(
+    121.11% 50% at 50% 50%,
+    rgba(28, 28, 28, 0.88) 0%,
+    #0d0d0d 100%
+  );
+}
+
+@media only screen and (min-width: 375px) {
+}
+
+@media only screen and (min-width: 480px) {
+  :root {
+    --input-font: 2.3vw;
+  }
+  .contactForm {
+    border-radius: 0.6rem;
+    padding: 1.1rem 0.8rem 2rem 0.8rem;
+    gap: 1rem;
+  }
+  .userDetails {
+    gap: 0.5rem;
+  }
+  .userInput,
+  .comments {
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+  }
+  .btn {
+    font-size: 3vw;
+    padding: 0.6rem;
+    border-radius: 0.3rem;
+  }
+}
+/* Small devices such as large phones (640px and up) */
+@media only screen and (min-width: 640px) {
+  .container {
+    margin-top: 2.5rem;
+    margin-bottom: 8rem;
+  }
+  .contactForm {
+    padding-bottom: 5rem;
+  }
+}
+
+/* Medium devices such as tablets (768px and up) */
+@media only screen and (min-width: 768px) {
+  .contactForm {
+    border-radius: 0.6rem;
+    padding: 1.7rem 1.3rem 6rem 1.3rem;
+    gap: 1.2rem;
+  }
+  :root {
+    --input-font: 1.7vw;
+  }
+  .userDetails {
+    gap: 0.7rem;
+  }
+  .userInput,
+  .comments {
+    padding: 1rem;
+    border-radius: 0.6rem;
+  }
+  .btn {
+    font-size: 2vw;
+    padding: 0.6rem;
+    border-radius: 0.3rem;
+  }
+}
+
+/*(900px and up) */
+@media only screen and (min-width: 900px) {
+  .container {
+    margin-top: 3rem;
+  }
+  .header {
+    font-size: 4vw;
+    margin-bottom: 1.3rem;
+  }
+}
+
+/* Large devices such as laptops (1024px and up) */
+@media only screen and (min-width: 1024px) {
+  .container {
+    margin-bottom: 10rem;
+  }
+  :root {
+    --input-font: 1.5vw;
+  }
+  .userInput {
+    padding: 1.4rem;
+    border-radius: 0.6rem;
+  }
+}
+
+/* Largest devices such as desktops (1280px and up) */
+@media only screen and (min-width: 1280px) {
+  .container {
+    margin-top: 4rem;
+    margin-bottom: 19rem;
+  }
+  .header {
+    font-size: 3.3vw;
+  }
+  .contactForm {
+    border-radius: 1rem;
+    padding: 3.5rem 2.9rem 9rem 2.9rem;
+    gap: 1.5rem;
+  }
+  .userInput {
+    padding: 1.6rem;
+    border-radius: 0.8rem;
+  }
+  .btn {
+    font-size: 1.8vw;
+    padding: 1.1vw;
+    border-radius: 0.8vw;
+  }
+}
+
+/*  (1350px and up) */
+@media only screen and (min-width: 1440px) {
+}

@@ -1,0 +1,214 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.wrapper {
+  background: var(--forms-bg);
+  backdrop-filter: blur(2px);
+  border-radius: 0.3rem;
+  padding: 1rem 0.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+.left {
+  width: fit-content;
+}
+.groupContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+.group {
+  background-color: white;
+  padding: 0.3rem;
+  border-radius: 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.grouptext {
+  font-size: 4vw;
+  text-wrap: nowrap;
+  color: var(--forms-selected-bg);
+  font-weight: 700;
+}
+.right {
+  width: fit-content;
+}
+
+.round {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.3rem;
+  border-radius: 0.1rem;
+}
+.roundsContainer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.roundtext {
+  font-size: 3vw;
+  font-weight: 600;
+}
+
+@media only screen and (min-width: 375px) {
+}
+
+@media only screen and (min-width: 480px) {
+  .wrapper {
+    border-radius: 0.3rem;
+    padding: 1.6rem 1rem;
+    gap: 2rem;
+  }
+  .groupContainer {
+    gap: 1.2rem;
+  }
+  .group {
+    padding: 0.5rem;
+    border-radius: 0.12rem;
+  }
+  .grouptext {
+    font-size: 3.4vw;
+  }
+  .round {
+    padding: 0.5rem 0.7rem;
+    border-radius: 0.12rem;
+  }
+  .roundsContainer {
+    gap: 0.7rem;
+  }
+
+  .roundtext {
+    font-size: 2vw;
+  }
+  .right {
+    width: 100%;
+  }
+}
+/* Small devices such as large phones (640px and up) */
+@media only screen and (min-width: 640px) {
+  .wrapper {
+    border-radius: 0.5rem;
+    padding: 2rem 1.5rem;
+    gap: 1.8rem;
+  }
+  .groupContainer {
+    gap: 1.6rem;
+  }
+  .group {
+    padding: 0.7rem;
+    border-radius: 0.2rem;
+  }
+  .grouptext {
+    font-size: 3.2vw;
+  }
+
+  .round {
+    padding: 0.7rem 0.9rem;
+    border-radius: 0.17rem;
+  }
+  .roundsContainer {
+    gap: 0.5rem;
+  }
+
+  .roundtext {
+    font-size: 1.7vw;
+  }
+}
+
+/* Medium devices such as tablets (768px and up) */
+@media only screen and (min-width: 768px) {
+  .wrapper {
+    border-radius: 0.7rem;
+    padding: 3rem 2rem;
+    gap: 1.5rem;
+    width: 95%;
+  }
+  .grouptext {
+    font-size: 2.9vw;
+  }
+}
+
+/*(900px and up) */
+@media only screen and (min-width: 900px) {
+  .wrapper {
+    border-radius: 1.1rem;
+    padding: 3.5rem 2.5rem;
+    padding-bottom: 4rem;
+    gap: 2rem;
+    width: 90%;
+  }
+}
+
+/* Large devices such as laptops (1024px and up) */
+@media only screen and (min-width: 1024px) {
+  .wrapper {
+    border-radius: 1.5rem;
+    padding: 3.5rem 2.5rem;
+    padding-bottom: 4rem;
+    gap: 2.3rem;
+    width: 85%;
+  }
+  .grouptext {
+    font-size: 2.5vw;
+  }
+  .round {
+    padding: 0.7rem 0.9rem;
+    border-radius: 0.17rem;
+  }
+  .roundsContainer {
+    gap: 0.6rem;
+  }
+
+  .roundtext {
+    font-size: 1.4vw;
+  }
+}
+
+/* Largest devices such as desktops (1280px and up) */
+@media only screen and (min-width: 1280px) {
+  .wrapper {
+    border-radius: 1.5rem;
+    padding: 3.5rem 2.5rem;
+    padding-bottom: 4rem;
+    gap: 2.5rem;
+    width: 80%;
+    justify-content: flex-start;
+  }
+  .grouptext {
+    font-size: 2vw;
+  }
+
+  .roundtext {
+    font-size: 1vw;
+  }
+}
+
+/*  (1350px and up) */
+@media only screen and (min-width: 1440px) {
+  .wrapper {
+    padding: 3.5rem 2.9rem;
+    padding-bottom: 4.81rem;
+    width: 70%;
+  }
+  .grouptext {
+    font-size: 2.3vw;
+  }
+  .round {
+    padding: 0.9rem 1.8rem;
+    border-radius: 0.21rem;
+  }
+  .roundsContainer {
+    gap: 0.6rem;
+  }
+
+  .roundtext {
+    font-size: 0.8vw;
+  }
+}

@@ -1,0 +1,229 @@
+:root {
+  --image-height: 50vw;
+}
+.container {
+  position: relative;
+  padding-top: calc(var(--image-height) - 10vw);
+}
+.imageContainer {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+.topImage {
+  width: 100%;
+  height: var(--image-height);
+  object-fit: cover;
+  object-position: center;
+  border-radius: var(--global-radius);
+}
+.articleContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.articleWrapper {
+  width: 90%;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 0.4rem;
+  background: rgba(255, 255, 255, 0.08);
+
+  box-shadow: 0px 5.803px 11.606px 0px rgba(27, 27, 27, 0.16);
+  backdrop-filter: blur(29.01477813720703px);
+  padding: 1rem 0.8rem;
+}
+
+.topText {
+  font-weight: 500;
+  font-size: 2.7vw;
+  margin-bottom: 0.8rem;
+}
+.title {
+  font-weight: 700;
+  font-size: 5.4vw;
+  margin-bottom: 0.3rem;
+}
+.author {
+  font-weight: 400;
+  font-size: 4vw;
+  margin-bottom: 0.7rem;
+  font-style: italic;
+  font-family: "Poppins", sans-serif;
+}
+.subHeader {
+  font-weight: 700;
+  font-size: 4.6vw;
+  margin-bottom: 0.5rem;
+  color: #d9d9d9;
+}
+.content {
+  font-weight: 400;
+  font-size: 3.5vw;
+  color: #d9d9d9;
+}
+
+@media only screen and (min-width: 375px) {
+  .topText {
+    font-size: 2.7vw;
+    margin-bottom: 0.8rem;
+  }
+  .title {
+    font-size: 5vw;
+    margin-bottom: 0.3rem;
+  }
+  .author {
+    font-size: 3.3vw;
+    margin-bottom: 1.1rem;
+  }
+  .subHeader {
+    font-size: 3.9vw;
+    margin-bottom: 0.5rem;
+  }
+  .content {
+    font-size: 3.1vw;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .topText {
+    font-size: 2.3vw;
+    margin-bottom: 0.8rem;
+  }
+  .title {
+    font-size: 4.3vw;
+    margin-bottom: 0.2rem;
+  }
+  .author {
+    font-size: 2.5vw;
+    margin-bottom: 1rem;
+  }
+  .subHeader {
+    font-size: 3.3vw;
+    margin-bottom: 0.5rem;
+  }
+  .content {
+    font-size: 2.7vw;
+  }
+}
+/* Small devices such as large phones (640px and up) */
+@media only screen and (min-width: 640px) {
+  .articleWrapper {
+    padding: 1.3rem;
+  }
+  .topText {
+    font-size: 1.8vw;
+    margin-bottom: 0.8rem;
+  }
+  .title {
+    font-size: 3.8vw;
+    margin-bottom: 0.2;
+  }
+  .author {
+    font-size: 2vw;
+    margin-bottom: 1rem;
+  }
+  .subHeader {
+    font-size: 2.8vw;
+    margin-bottom: 0.5rem;
+  }
+  .content {
+    font-size: 2.2vw;
+  }
+}
+
+/* Medium devices such as tablets (768px and up) */
+@media only screen and (min-width: 768px) {
+  .articleWrapper {
+    padding: 1.5rem;
+    width: 86%;
+  }
+  .topText {
+    font-size: 1.5vw;
+    margin-bottom: 0.9rem;
+  }
+  .title {
+    font-size: 3.2vw;
+    margin-bottom: 0.2rem;
+  }
+  .author {
+    font-size: 1.8vw;
+    margin-bottom: 1rem;
+  }
+  .subHeader {
+    font-size: 2.3vw;
+    margin-bottom: 0.5rem;
+  }
+  .content {
+    font-size: 1.9vw;
+  }
+}
+
+/*(900px and up) */
+@media only screen and (min-width: 900px) {
+  :root {
+    --image-height: 45vw;
+  }
+}
+
+/* Large devices such as laptops (1024px and up) */
+@media only screen and (min-width: 1024px) {
+  :root {
+    --image-height: 47vw;
+  }
+  .articleWrapper {
+    padding: 1.9rem;
+    width: 84%;
+    border-radius: 0.8rem;
+  }
+  .topText {
+    font-size: 1.3vw;
+    margin-bottom: 0.9rem;
+  }
+  .title {
+    font-size: 3vw;
+    margin-bottom: 0.2rem;
+  }
+  .author {
+    font-size: 1.4vw;
+    margin-bottom: 1rem;
+  }
+  .subHeader {
+    font-size: 2vw;
+    margin-bottom: 0.5rem;
+  }
+  .content {
+    font-size: 1.6vw;
+  }
+}
+
+/* Largest devices such as desktops (1280px and up) */
+@media only screen and (min-width: 1280px) {
+}
+
+/*  (1350px and up) */
+@media only screen and (min-width: 1440px) {
+  :root {
+    --image-height: 41vw;
+  }
+  .articleWrapper {
+    padding: 2.5rem;
+    width: 84%;
+    border-radius: 0.8rem;
+  }
+  .topText {
+    font-size: 1.1vw;
+    margin-bottom: 1.2rem;
+  }
+  .author {
+    margin-bottom: 1.7rem;
+  }
+  .subHeader {
+    font-size: 2vw;
+    margin-bottom: 1.7rem;
+  }
+  .content {
+    font-size: 1.6vw;
+  }
+}

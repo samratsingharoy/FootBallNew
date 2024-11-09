@@ -1,0 +1,94 @@
+.tableRowsContainer {
+  width: 100%;
+  display: grid;
+  /* grid-template-columns: 2fr 0.5fr 0.5fr 2fr 2fr 0.5fr 1fr 0.5fr; */
+  grid-template-columns:
+    var(--big-table-columns) minmax(0, var(--small-table-columns)) minmax(
+      0,
+      var(--small-table-columns)
+    )
+    var(--big-table-columns)
+    var(--big-table-columns) minmax(0, var(--small-table-columns))
+    var(--med-table-columns) minmax(0, var(--small-table-columns));
+  gap: var(--player-info-table-column-gap);
+}
+.inputColumn {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  color: #9c9c9c;
+  font-size: 1.9vw;
+  padding: 0.1rem 0.4rem;
+
+  height: 5vw;
+  border-radius: 0.2rem;
+  resize: none;
+  text-wrap: wrap;
+}
+
+.shirtnum,
+.shirtsize,
+.phone,
+.bloodGroup,
+.guardian,
+.id {
+  text-align: center;
+}
+@media only screen and (min-width: 375px) {
+}
+
+@media only screen and (min-width: 480px) {
+}
+/* Small devices such as large phones (640px and up) */
+@media only screen and (min-width: 640px) {
+  .inputColumn {
+    font-size: 1.9vw;
+
+    height: 5vw;
+    border-radius: 0.4rem;
+  }
+  .address.inputColumn {
+    padding-top: 0.4rem;
+  }
+}
+
+/* Medium devices such as tablets (768px and up) */
+@media only screen and (min-width: 768px) {
+  .inputColumn {
+    font-size: 1.7vw;
+    padding: 0.1rem 0.6rem;
+    border-radius: 0.5rem;
+  }
+}
+
+/*(900px and up) */
+@media only screen and (min-width: 900px) {
+  .inputColumn {
+    font-size: 1.5vw;
+  }
+}
+
+/* Large devices such as laptops (1024px and up) */
+@media only screen and (min-width: 1024px) {
+}
+
+/* Largest devices such as desktops (1280px and up) */
+@media only screen and (min-width: 1280px) {
+  .inputColumn {
+    font-size: 1.2vw;
+    height: 4.5vw;
+  }
+  .address.inputColumn {
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+  }
+}
+
+/*  (1350px and up) */
+@media only screen and (min-width: 1440px) {
+  .inputColumn {
+    font-size: 1.1vw;
+    height: 4vw;
+  }
+}

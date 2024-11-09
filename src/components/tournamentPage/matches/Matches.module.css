@@ -1,0 +1,67 @@
+.container {
+  background: var(--forms-bg);
+  border-radius: 0.3rem;
+  padding: 0.3rem;
+  display: flex;
+  gap: 1rem;
+}
+.left {
+  width: fit-content;
+}
+.groupContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.grouptext {
+  font-size: 3.5vw;
+  text-wrap: nowrap;
+}
+
+.right {
+  width: 100%;
+}
+.roundsContainer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.round {
+  background: radial-gradient(
+    121.11% 50% at 50% 50%,
+    rgba(28, 28, 28, 0.88) 0%,
+    #0d0d0d 100%
+  );
+}
+.roundtext {
+  font-size: 3vw;
+}
+
+.tournamentTable {
+  width: 100%;
+  text-align: center;
+  margin-top: 0.4rem;
+  border-collapse: separate;
+  border-spacing: 0 0.2rem;
+}
+.headContent th,
+.bodyContent td {
+  background-color: var(--forms-selected-bg);
+  padding: 0.2rem;
+}
+.headContent th {
+  border-bottom: none;
+}
+
+.tableHeader {
+  font-size: 3.4vw;
+  font-weight: 700;
+}
+
+.tournamentTable td {
+  font-size: 3.2vw;
+  font-weight: 500;
+}
+.matchDate {
+  font-size: 2.2vw;
+}

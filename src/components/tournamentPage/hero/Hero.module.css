@@ -1,0 +1,258 @@
+.container {
+  display: flex;
+  gap: 0.7rem;
+  margin-bottom: 2rem;
+}
+
+.singleTournamentContainer {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.51) 0%,
+    rgba(153, 153, 153, 0.51) 100%
+  );
+
+  border-radius: 0.3rem;
+  padding: 0.5rem 0.4rem;
+  width: 100%;
+}
+.header {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 100%;
+}
+.tournamentLogo {
+  width: 5rem;
+}
+.modlogoContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.scheduleHeader {
+  margin-bottom: 0.4rem;
+  color: #d9d9d9;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+.colan {
+  margin-bottom: 0.4rem;
+  color: #d9d9d9;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+.scheduleList {
+  color: #d9d9d9;
+  font-weight: 600;
+  font-size: 0.7rem;
+  padding-left: 1rem;
+}
+.registratioContainer {
+  background: radial-gradient(
+    121.11% 50% at 50% 50%,
+    rgba(28, 28, 28, 0.88) 0%,
+    #0d0d0d 100%
+  );
+
+  padding: 0.3rem;
+  width: fit-content;
+  margin-top: 0.6rem;
+  border-radius: 0.3rem;
+}
+.registrationText {
+  font-weight: 700;
+  font-size: 0.7rem;
+}
+.logoContainer {
+  display: none;
+}
+.tournamentsContainer {
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (min-width: 375px) {
+}
+
+@media only screen and (min-width: 480px) {
+  .modlogoContainer {
+    display: none;
+  }
+  .logoContainer {
+    display: block;
+  }
+
+  .singleTournamentContainer {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.9rem 0.4rem;
+    padding-bottom: 2rem;
+    border-radius: 0.5rem;
+  }
+  .headerContainer {
+    margin-bottom: 0.8rem;
+  }
+  .header {
+    font-size: 3.5vw;
+  }
+  .scheduleHeader {
+    margin-bottom: 0.6rem;
+    font-size: 3vw;
+  }
+  .colan {
+    font-size: 4.1vw;
+  }
+  .scheduleList {
+    font-size: 2.4vw;
+    padding-left: 0.6rem;
+  }
+  .tournamentLogo {
+    width: 30vw;
+  }
+  .registratioContainer {
+    background-color: black;
+    padding: 0.5rem;
+    width: 95%;
+    margin-top: 0.9rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .registrationText {
+    font-size: 2.3vw;
+  }
+}
+/* Small devices such as large phones (640px and up) */
+@media only screen and (min-width: 640px) {
+  .singleTournamentContainer {
+    padding-left: 1rem;
+  }
+  .singleLeft {
+    padding-top: 1rem;
+  }
+  .header {
+    font-size: 3.3vw;
+  }
+  .scheduleHeader {
+    margin-bottom: 0.6rem;
+    font-size: 2.7vw;
+  }
+  .colan {
+    font-size: 3.8vw;
+  }
+  .scheduleList {
+    font-size: 2vw;
+    padding-left: 0.6rem;
+  }
+  .tournamentLogo {
+    width: 38vw;
+  }
+  .registrationText {
+    font-size: 2vw;
+  }
+  .tournamentsContainer {
+    gap: 0.7rem;
+  }
+}
+
+/* Medium devices such as tablets (768px and up) */
+@media only screen and (min-width: 768px) {
+  .singleTournamentContainer {
+    padding: 1.6rem 1rem 3rem 1rem;
+    border-radius: 1rem;
+  }
+
+  .tournamentLogo {
+    width: 36vw;
+  }
+}
+
+/*(900px and up) */
+@media only screen and (min-width: 900px) {
+  .container {
+    gap: 0.9rem;
+  }
+  .singleTournamentContainer {
+    padding: 1.6rem 2rem 3rem 2rem;
+    border-radius: 1rem;
+  }
+  .tournamentsContainer {
+    gap: 1rem;
+  }
+
+  .header {
+    font-size: 3.1vw;
+  }
+  .scheduleHeader {
+    margin-bottom: 0.9rem;
+    font-size: 2.3vw;
+  }
+  .colan {
+    font-size: 3.1vw;
+  }
+  .scheduleList {
+    font-size: 1.9vw;
+    padding-left: 0.6rem;
+  }
+  .tournamentLogo {
+    width: 34vw;
+  }
+  .registratioContainer {
+    margin-top: 1.3rem;
+  }
+  .registrationText {
+    font-size: 2vw;
+  }
+}
+
+/* Large devices such as laptops (1024px and up) */
+@media only screen and (min-width: 1024px) {
+  .singleTournamentContainer {
+    padding: 2rem 2rem 4.7rem 2rem;
+    border-radius: 1rem;
+    gap: 1.6rem;
+  }
+  .headerContainer {
+    margin-bottom: 1.6rem;
+  }
+  .scheduleList {
+    font-size: 1.7vw;
+    padding-left: 0.6rem;
+  }
+  .tournamentLogo {
+    width: 31vw;
+  }
+  .tournamentsContainer {
+    gap: 1.2rem;
+  }
+}
+
+/* Largest devices such as desktops (1280px and up) */
+@media only screen and (min-width: 1280px) {
+  .tournamentsContainer {
+    gap: 1.3rem;
+  }
+  .tournamentLogo {
+    width: 28.5vw;
+  }
+  .singleTournamentContainer {
+    padding: 2rem 2rem 6rem 3rem;
+    border-radius: 1rem;
+    gap: 1.6rem;
+  }
+  .registrationText {
+    font-size: 1.6vw;
+  }
+  .registratioContainer {
+    padding: 1rem;
+    border-radius: 0.4rem;
+  }
+}
+
+/*  (1350px and up) */
+@media only screen and (min-width: 1440px) {
+}

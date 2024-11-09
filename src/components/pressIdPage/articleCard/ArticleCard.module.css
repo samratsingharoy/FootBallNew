@@ -1,0 +1,120 @@
+.container {
+  border-radius: 0.3rem;
+  overflow: hidden;
+  box-shadow: 4px 4px 4px 0px rgba(160, 160, 160, 0.25);
+
+  background-color: #2c2c2c;
+}
+.articleImage {
+  width: 100%;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.2rem 0.4rem;
+}
+.content {
+  font-size: 0.6rem;
+}
+
+.linkContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.linkArrow {
+  width: 0.7rem;
+}
+.linkText {
+  font-size: 0.7rem;
+}
+
+@media only screen and (min-width: 480px) {
+  .bottom {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    padding: 0.4rem 0.5rem;
+  }
+  .linkContainer {
+    width: fit-content;
+  }
+  .contentContainer {
+    width: 65%;
+    /* background-color: antiquewhite; */
+  }
+  .content {
+    font-size: 1.8vw;
+  }
+  .linkArrow {
+    width: 1.8vw;
+  }
+  .linkText {
+    font-size: 1.8vw;
+  }
+}
+/* Small devices such as large phones (640px and up) */
+@media only screen and (min-width: 640px) {
+}
+
+/* Medium devices such as tablets (768px and up) */
+@media only screen and (min-width: 768px) {
+  .bottom {
+    gap: 0.5rem;
+    padding: 0.5rem 0.6rem;
+  }
+}
+
+/*(900px and up) */
+@media only screen and (min-width: 900px) {
+}
+
+/* Large devices such as laptops (1024px and up) */
+@media only screen and (min-width: 1024px) {
+  .container {
+    border-radius: 0.5rem;
+  }
+  .content {
+    font-size: 1.6vw;
+  }
+  .linkArrow {
+    width: 1.6vw;
+  }
+  .linkText {
+    font-size: 1.5vw;
+  }
+  .bottom {
+    gap: 0.5rem;
+    padding: 0.7rem;
+  }
+}
+
+/* Largest devices such as desktops (1280px and up) */
+@media only screen and (min-width: 1280px) {
+  .bottom {
+    gap: 0.5rem;
+    padding: 0.9rem;
+  }
+  .linkText {
+    font-size: 1.4vw;
+  }
+}
+
+/*  (1350px and up) */
+@media only screen and (min-width: 1440px) {
+  .contentContainer {
+    width: 70%;
+  }
+  .bottom {
+    gap: 0.5rem;
+    padding: 1.2rem;
+  }
+  .linkText {
+    font-size: 1.3vw;
+  }
+}

@@ -1,0 +1,106 @@
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+  margin-bottom: 0.8rem;
+}
+.content {
+  /* font-size: 1.5rem; */
+  font-weight: 400;
+  font-size: 3.1vw;
+}
+
+.bottomHeader {
+  font-size: var(--global-header-font);
+  margin-bottom: 0.3rem;
+}
+
+.video {
+  width: 100%;
+  display: block;
+  border-radius: 0.5rem;
+  height: 45vw;
+  object-fit: cover;
+}
+.videoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.playpauseWrapper {
+  width: 2.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.playpause {
+  position: absolute;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #d3d3d3a9;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 0.2rem;
+}
+
+@media only screen and (min-width: 375px) {
+}
+
+@media only screen and (min-width: 480px) {
+  .content {
+    font-size: 2.8vw;
+  }
+  .contentContainer {
+    margin-bottom: 5vw;
+  }
+}
+/* Small devices such as large phones (640px and up) */
+@media only screen and (min-width: 640px) {
+  .content {
+    font-size: 2.6vw;
+  }
+}
+
+/* Medium devices such as tablets (768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/*(900px and up) */
+@media only screen and (min-width: 900px) {
+  .content {
+    font-size: 2.3vw;
+  }
+  .video {
+    border-radius: 1vw;
+    height: 43vw;
+  }
+  .playpauseWrapper {
+    width: 7vw;
+  }
+  .playpause {
+    width: 7vw;
+    height: 7vw;
+    padding-left: 0.4rem;
+  }
+}
+
+/* Large devices such as laptops (1024px and up) */
+@media only screen and (min-width: 1024px) {
+  .content {
+    font-size: 2vw;
+  }
+}
+
+/* Largest devices such as desktops (1280px and up) */
+@media only screen and (min-width: 1280px) {
+  .content {
+    font-size: 1.8vw;
+  }
+}
+
+/*  (1350px and up) */
+@media only screen and (min-width: 1440px) {
+}

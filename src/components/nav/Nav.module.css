@@ -1,0 +1,192 @@
+:root {
+  --nav-gap: 0.5rem;
+}
+.container {
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* desktop Menu */
+.menuItemContainer {
+  display: none;
+}
+.logoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logoImage {
+  width: 2.5rem;
+}
+.hamContainer {
+  color: white;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.menuItem {
+  font-size: 1.2rem;
+  padding-left: 1.2rem;
+}
+.mobMenuContainer,
+.hideMenu {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  width: 60%;
+  z-index: 100;
+  gap: 1rem;
+  background-color: rgb(37, 36, 36);
+  height: 100vh;
+  min-height: 20rem;
+  padding: 1rem;
+  transition: all 500ms ease-in-out;
+}
+.mobMenuContainer {
+  right: 0;
+}
+
+.mobMenuContainer.hideMenu {
+  right: -100%;
+}
+.closeIcon {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+}
+
+.closeIcon {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 375px) {
+  .container {
+    padding: 1.4rem 2rem;
+  }
+  .logoImage {
+    width: 2.8rem;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .container {
+    padding: 1.4rem 2rem;
+  }
+  .logoImage {
+    width: 10vw;
+  }
+  .hamContainer {
+    font-size: 4.5vw;
+  }
+}
+/* Small devices such as large phones (640px and up) */
+@media only screen and (min-width: 640px) {
+  :root {
+    --nav-gap: 1.3rem;
+  }
+  .hamContainer {
+    display: none;
+  }
+  .mobMenuContainer {
+    display: none;
+  }
+
+  .menuItemContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--nav-gap);
+  }
+  .wrapper {
+    justify-content: center;
+    gap: var(--nav-gap);
+  }
+  .menuItem {
+    font-size: 1rem;
+    padding-left: 0rem;
+  }
+
+  .logoImage {
+    width: 3.5rem;
+  }
+}
+
+/* Medium devices such as tablets (768px and up) */
+@media only screen and (min-width: 768px) {
+  :root {
+    --nav-gap: 1.5rem;
+  }
+  .menuItem {
+    font-size: 1.1rem;
+  }
+
+  .logoImage {
+    width: 3.7rem;
+  }
+}
+
+/*(900px and up) */
+@media only screen and (min-width: 900px) {
+}
+
+/* Large devices such as laptops (1024px and up) */
+@media only screen and (min-width: 1024px) {
+  :root {
+    --nav-gap: 1.5rem;
+  }
+  .menuItem {
+    font-size: 1.3rem;
+  }
+
+  .logoImage {
+    width: 4rem;
+  }
+}
+
+/* Largest devices such as desktops (1280px and up) */
+@media only screen and (min-width: 1280px) {
+  :root {
+    --nav-gap: 2.5rem;
+  }
+  .container {
+    padding-top: 2rem;
+    overflow: hidden;
+  }
+  .menuItem {
+    font-size: 1.5rem;
+  }
+
+  .logoImage {
+    width: auto;
+    height: 6rem;
+  }
+}
+
+/*  (1350px and up) */
+@media only screen and (min-width: 1600px) {
+  :root {
+    --nav-gap: 2.2vw;
+  }
+  .menuItem {
+    font-size: 1.7vw;
+  }
+
+  .logoImage {
+    width: 6vw;
+  }
+}

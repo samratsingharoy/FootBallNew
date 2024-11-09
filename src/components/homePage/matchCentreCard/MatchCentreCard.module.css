@@ -1,0 +1,522 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* --TOP-- */
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  margin-bottom: 0.7rem;
+}
+
+.liveContainer {
+  position: absolute;
+  right: 0;
+  display: flex;
+  gap: 0.3rem;
+}
+.header {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+.liveText {
+  color: #05cd05;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.liveDot {
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 50%;
+  background-color: #05cd05;
+}
+
+/* --match Time --- */
+.matchTime {
+  font-size: 0.5rem;
+  color: #9c9c9c;
+  margin-bottom: 0.8rem;
+  font-weight: 700;
+}
+
+/* --Matches Container-- */
+
+.matchesContainer,
+.matchesMidContainer,
+.teamDetailsContainer,
+.scoresContainer,
+.allLeaguesContainer,
+.viewAllWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.matchesContainer {
+  gap: 0.5rem;
+}
+.matchesMidContainer {
+  gap: 0.5rem;
+}
+.teamDetailsContainer {
+  gap: 0.3rem;
+}
+.scoresContainer {
+  gap: 0.2rem;
+}
+.teamImage {
+  width: 1.8rem;
+}
+.teamName {
+  font-size: 0.7rem;
+  width: 4rem;
+  text-align: center;
+  font-weight: 700;
+  /* background-color: blue; */
+}
+.score {
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.rightArrow,
+.leftArrow {
+  width: 1rem;
+}
+
+.viewAllArrow {
+  width: 1rem;
+}
+
+.leagueLogoContainer .leagueLogo {
+  border-radius: 50%;
+  height: 2.5rem;
+  width: 2.5rem;
+  object-fit: cover;
+}
+.leagueLogoContainer {
+  margin-bottom: 1rem;
+}
+
+/* allLeaguesContainer */
+.allLeaguesContainer {
+  gap: 0.5rem;
+  margin-bottom: 0.6rem;
+}
+.allLeaguesContainer .leagueLogo {
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+  object-fit: cover;
+}
+
+.viewAllWrapper {
+  background-color: black;
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.7rem;
+  gap: 0.2rem;
+}
+
+.viewalltext {
+  font-size: 0.6rem;
+  font-weight: 700;
+}
+.viewAllArrow {
+  width: 0.6rem;
+}
+
+@media only screen and (min-width: 375px) {
+  .matchesContainer {
+    gap: 1rem;
+  }
+  .matchesMidContainer {
+    gap: 0.9rem;
+  }
+  .teamDetailsContainer {
+    gap: 0.3rem;
+  }
+  .scoresContainer {
+    gap: 0.4rem;
+  }
+
+  .rightArrow,
+  .leftArrow {
+    width: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .header {
+    font-size: 1.6rem;
+  }
+  .liveText {
+    font-size: 1.1rem;
+  }
+
+  .liveDot {
+    width: 0.9rem;
+    height: 0.9rem;
+  }
+  .matchTime {
+    font-size: 0.7rem;
+    margin-bottom: 0.8rem;
+  }
+
+  /* --mid matches-- */
+  .matchesContainer {
+    gap: 1.8rem;
+  }
+  .matchesMidContainer {
+    gap: 0.9rem;
+  }
+  .teamDetailsContainer {
+    gap: 0.3rem;
+  }
+  .scoresContainer {
+    gap: 0.2rem;
+  }
+  .teamImage {
+    width: 2rem;
+  }
+  .teamName {
+    font-size: 0.8rem;
+    width: 5.3rem;
+    /* background-color: blue; */
+  }
+  .score,
+  .dash {
+    font-size: 1rem;
+  }
+
+  .rightArrow,
+  .leftArrow {
+    width: 1.5rem;
+  }
+
+  .leagueLogoContainer .leagueLogo {
+    height: 2.8rem;
+    width: 2.8rem;
+  }
+
+  .viewAllArrow {
+    width: 1rem;
+  }
+
+  /* allLeaguesContainer */
+  .allLeaguesContainer {
+    gap: 0.8rem;
+    margin-bottom: 1rem;
+  }
+  .allLeaguesContainer .leagueLogo {
+    height: 2.2rem;
+    width: 2.2rem;
+  }
+
+  .viewAllWrapper {
+    padding: 0.3rem 0.6rem;
+    border-radius: 0.7rem;
+    gap: 0.6rem;
+  }
+
+  .viewalltext {
+    font-size: 0.8rem;
+  }
+  .viewAllArrow {
+    width: 0.8rem;
+  }
+}
+/* Small devices such as large phones (640px and up) */
+@media only screen and (min-width: 640px) {
+  .header {
+    font-size: 1.9rem;
+  }
+  .liveText {
+    font-size: 1.1rem;
+  }
+
+  .liveDot {
+    width: 0.9rem;
+    height: 0.9rem;
+  }
+  .matchTime {
+    font-size: 0.8rem;
+    margin-bottom: 0.8rem;
+  }
+
+  /* --mid matches-- */
+  .matchesContainer {
+    gap: 3rem;
+  }
+  .matchesMidContainer {
+    gap: 0.9rem;
+  }
+  .teamDetailsContainer {
+    gap: 0.3rem;
+  }
+  .scoresContainer {
+    gap: 0.2rem;
+  }
+  .teamImage {
+    width: 2.5rem;
+  }
+  .teamName {
+    font-size: 0.9rem;
+    width: 5.7rem;
+    /* background-color: blue; */
+  }
+  .score,
+  .dash {
+    font-size: 1.1rem;
+  }
+
+  .rightArrow,
+  .leftArrow {
+    width: 1.5rem;
+  }
+}
+
+/* Medium devices such as tablets (768px and up) */
+@media only screen and (min-width: 768px) {
+  .header {
+    font-size: 2.3rem;
+  }
+
+  /* --mid matches-- */
+  .matchesContainer {
+    gap: 5rem;
+  }
+  .matchesMidContainer {
+    gap: 2rem;
+  }
+
+  .scoresContainer {
+    gap: 0.8rem;
+  }
+  .teamImage {
+    width: 3.2rem;
+  }
+  .teamName {
+    font-size: 1rem;
+    width: 6.2rem;
+    /* background-color: blue; */
+  }
+  .score,
+  .dash {
+    font-size: 1.3rem;
+  }
+
+  .rightArrow,
+  .leftArrow {
+    width: 1.7rem;
+  }
+
+  .leagueLogoContainer {
+    margin-bottom: 1.2rem;
+  }
+  .leagueLogoContainer .leagueLogo {
+    height: 3rem;
+    width: 3rem;
+  }
+
+  /* allLeaguesContainer */
+  .allLeaguesContainer {
+    gap: 0.8rem;
+    margin-bottom: 1rem;
+  }
+  .allLeaguesContainer .leagueLogo {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+
+  .viewAllWrapper {
+    padding: 0.3rem 0.6rem;
+    border-radius: 0.7rem;
+    gap: 0.6rem;
+  }
+
+  .viewalltext {
+    font-size: 0.9rem;
+  }
+  .viewAllArrow {
+    width: 0.9rem;
+  }
+}
+
+/*(900px and up) */
+@media only screen and (min-width: 900px) {
+  .header {
+    font-size: 2.5rem;
+  }
+
+  .liveText {
+    font-size: 1.4rem;
+  }
+
+  .liveDot {
+    width: 1.1rem;
+    height: 1.1rem;
+  }
+  .matchTime {
+    font-size: 0.9rem;
+    margin-bottom: 1.1rem;
+  }
+
+  /* --mid matches-- */
+  .matchesContainer {
+    gap: 7rem;
+  }
+  .matchesMidContainer {
+    gap: 1.5rem;
+  }
+
+  .scoresContainer {
+    gap: 1.5rem;
+  }
+  .teamImage {
+    width: 3.6rem;
+  }
+  .teamName {
+    font-size: 1.1rem;
+    width: 6.9rem;
+    /* background-color: blue; */
+  }
+  .score,
+  .dash {
+    font-size: 1.5rem;
+  }
+
+  .rightArrow,
+  .leftArrow {
+    width: 1.9rem;
+  }
+
+  .leagueLogoContainer {
+    margin-bottom: 1.2rem;
+  }
+  .leagueLogoContainer .leagueLogo {
+    height: 3.4rem;
+    width: 3.4rem;
+  }
+
+  /* allLeaguesContainer */
+  .allLeaguesContainer {
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  .allLeaguesContainer .leagueLogo {
+    height: 2.8rem;
+    width: 2.8rem;
+  }
+
+  .viewAllWrapper {
+    padding: 0.3rem 0.6rem;
+    border-radius: 0.9rem;
+    gap: 0.6rem;
+  }
+
+  .viewalltext {
+    font-size: 1rem;
+  }
+  .viewAllArrow {
+    width: 0.9rem;
+  }
+}
+
+/* Large devices such as laptops (1024px and up) */
+@media only screen and (min-width: 1024px) {
+}
+
+/* Largest devices such as desktops (1280px and up) */
+@media only screen and (min-width: 1280px) {
+  .header {
+    font-size: 3rem;
+  }
+  .liveContainer {
+    align-items: center;
+    justify-content: center;
+  }
+  .liveText {
+    font-size: 2.5rem;
+  }
+
+  .liveDot {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-bottom: 0.2rem;
+  }
+  .matchTime {
+    font-size: 1rem;
+    margin-bottom: 1.1rem;
+  }
+
+  /* --mid matches-- */
+  .matchesContainer {
+    gap: 7rem;
+  }
+  .matchesMidContainer {
+    gap: 1.5rem;
+  }
+
+  .scoresContainer {
+    gap: 1.5rem;
+  }
+  .teamImage {
+    width: 4.5rem;
+  }
+  .teamName {
+    font-size: 1.5rem;
+    width: 9.3rem;
+    /* background-color: blue; */
+  }
+  .score,
+  .dash {
+    font-size: 2rem;
+  }
+
+  .rightArrow,
+  .leftArrow {
+    width: 2rem;
+  }
+
+  .leagueLogoContainer {
+    margin-bottom: 1.2rem;
+  }
+  .leagueLogoContainer .leagueLogo {
+    height: 4.5rem;
+    width: 4.5rem;
+  }
+
+  /* allLeaguesContainer */
+  .allLeaguesContainer {
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  .allLeaguesContainer .leagueLogo {
+    height: 4rem;
+    width: 4rem;
+  }
+
+  .viewAllWrapper {
+    padding: 0.3rem 0.6rem;
+    border-radius: 1.1rem;
+    gap: 0.6rem;
+  }
+
+  .viewalltext {
+    font-size: 1.5rem;
+  }
+  .viewAllArrow {
+    width: 1.5rem;
+  }
+}
+
+/*  (1350px and up) */
+@media only screen and (min-width: 1350px) {
+}

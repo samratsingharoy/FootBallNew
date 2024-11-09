@@ -1,0 +1,58 @@
+.container {
+  background-color: #2a2a2a;
+  border-radius: var(--global-radius);
+  margin-top: 2rem;
+  padding: 1.3rem 0.5rem;
+}
+
+@media only screen and (min-width: 375px) {
+}
+
+@media only screen and (min-width: 480px) {
+  .container {
+    margin-top: 2rem;
+    padding: 1.7rem 0.7rem;
+  }
+}
+/* Small devices such as large phones (640px and up) */
+@media only screen and (min-width: 640px) {
+  .container {
+    margin-top: 2rem;
+    padding: 1.9rem 1.2rem;
+  }
+}
+
+/* Medium devices such as tablets (768px and up) */
+@media only screen and (min-width: 768px) {
+  .container {
+    margin-top: 2rem;
+    padding: 2.1rem 1.7rem;
+    padding-bottom: 3rem;
+  }
+}
+
+/*(900px and up) */
+@media only screen and (min-width: 900px) {
+  .container {
+    margin-top: 2.2rem;
+    padding: 2.3rem 1.9rem;
+    padding-bottom: 3.2rem;
+  }
+}
+
+/* Large devices such as laptops (1024px and up) */
+@media only screen and (min-width: 1024px) {
+}
+
+/* Largest devices such as desktops (1280px and up) */
+@media only screen and (min-width: 1280px) {
+  .container {
+    margin-top: 3rem;
+    padding: 2.3rem 1.9rem;
+    padding-bottom: 3.2rem;
+  }
+}
+
+/*  (1350px and up) */
+@media only screen and (min-width: 1350px) {
+}

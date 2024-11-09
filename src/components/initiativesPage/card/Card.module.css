@@ -1,0 +1,200 @@
+.container {
+  /* width: calc(100vw - 2 * var(--global-leftright-padding)); */
+  /* padding: 0 1rem; */
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cardWrapper {
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 45vw;
+  display: flex;
+  justify-content: flex-end;
+  border-radius: 0.4rem;
+  overflow: hidden;
+}
+.innerWrapper {
+  width: 70%;
+  background: rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(4.5px);
+  padding-top: 3%;
+  padding-left: 0.5rem;
+  padding-right: 0.8rem;
+}
+
+.title {
+  font-size: 3.6vw;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.content {
+  font-weight: 500;
+  font-size: 2.8vw;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.btnContainer {
+  background-color: #f2f2f2;
+  padding: 0.3rem;
+  margin-top: 0.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  border-radius: 0.4rem;
+}
+.btn {
+  font-size: 3vw;
+
+  background: radial-gradient(
+    121.11% 50% at 50% 50%,
+    rgba(28, 28, 28, 0.88) 0%,
+    #0d0d0d 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  box-shadow: 2px 2px 4px 0px rgba(206, 206, 206, 0.25);
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+  color: #272727;
+}
+@media only screen and (min-width: 375px) {
+}
+
+@media only screen and (min-width: 480px) {
+  .cardWrapper {
+    height: 40vw;
+    border-radius: 0.6rem;
+  }
+  .innerWrapper {
+    width: 65%;
+    padding-left: 1rem;
+    padding-right: 0.8rem;
+  }
+  .title {
+    font-size: 3vw;
+    margin-bottom: 0.5rem;
+  }
+  .content {
+    font-size: 2.6vw;
+  }
+  .btnContainer {
+    padding: 0.3rem;
+    margin-top: 1.3rem;
+    border-radius: 0.4rem;
+  }
+  .btn {
+    font-size: 2.5vw;
+  }
+}
+/* Small devices such as large phones (640px and up) */
+@media only screen and (min-width: 640px) {
+  .cardWrapper {
+    height: 24vw;
+    border-radius: 0.6rem;
+  }
+  .innerWrapper {
+    width: 80%;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+  }
+  .title {
+    font-size: 2vw;
+    margin-bottom: 0.5rem;
+  }
+  .content {
+    font-size: 1.4vw;
+  }
+  .btnContainer {
+    padding: 0.3rem;
+    margin-top: 1.3rem;
+    border-radius: 0.4rem;
+  }
+  .btn {
+    font-size: 1.6vw;
+  }
+}
+
+/* Medium devices such as tablets (768px and up) */
+@media only screen and (min-width: 768px) {
+  .cardWrapper {
+    height: 23vw;
+  }
+}
+
+/*(900px and up) */
+@media only screen and (min-width: 900px) {
+  .cardWrapper {
+    height: 22vw;
+  }
+  .innerWrapper {
+    width: 60%;
+  }
+  .title {
+    font-size: 1.6vw;
+    margin-bottom: 0.5rem;
+  }
+  .content {
+    font-size: 1.3vw;
+  }
+
+  .btn {
+    font-size: 1.4vw;
+  }
+}
+
+/* Large devices such as laptops (1024px and up) */
+@media only screen and (min-width: 1024px) {
+  .cardWrapper {
+    height: 20vw;
+  }
+  .innerWrapper {
+    width: 57%;
+    padding-left: 1rem;
+  }
+  .title {
+    font-size: 1.4vw;
+    margin-bottom: 0.5rem;
+  }
+  .content {
+    font-size: 1.1vw;
+  }
+
+  .btn {
+    font-size: 1.1vw;
+  }
+}
+
+/* Largest devices such as desktops (1280px and up) */
+@media only screen and (min-width: 1280px) {
+  .cardWrapper {
+    height: 20vw;
+  }
+  .innerWrapper {
+    width: 57%;
+    padding-left: 1rem;
+  }
+  .title {
+    font-size: 1.6vw;
+    margin-bottom: 0.8rem;
+  }
+  .content {
+    font-size: 1.1vw;
+  }
+  .btnContainer {
+    padding: 0.5rem;
+    margin-top: 1.3rem;
+    border-radius: 0.4rem;
+  }
+
+  .btn {
+    font-size: 1.5vw;
+  }
+}
+
+/*  (1350px and up) */
+@media only screen and (min-width: 1440px) {
+}

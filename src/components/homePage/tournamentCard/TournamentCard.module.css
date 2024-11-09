@@ -1,0 +1,71 @@
+.container {
+  width: calc(100vw - 2 * var(--global-leftright-padding));
+  display: flex;
+  align-items: center;
+
+  flex-direction: column;
+}
+.imageContainer {
+  overflow: visible;
+  padding-top: 2rem;
+}
+.tournamentImage {
+  width: 35vw;
+
+  filter: drop-shadow(0px 0px 30px #ffffffbb)
+    drop-shadow(0px 0px 30px #ffffff5c) drop-shadow(0px 0px 30px #ffffffa8)
+    drop-shadow(0px 0px 30px #ffffffa8);
+}
+.title {
+  font-size: 5.5vw;
+  margin-top: 0.7rem;
+}
+.season {
+  font-size: 3.5vw;
+  margin-top: 0.5rem;
+}
+
+@media only screen and (min-width: 375px) {
+}
+
+@media only screen and (min-width: 480px) {
+}
+/* Small devices such as large phones (640px and up) */
+@media only screen and (min-width: 640px) {
+}
+
+/* Medium devices such as tablets (768px and up) */
+@media only screen and (min-width: 768px) {
+  .imageContainer {
+    padding-top: 3rem;
+  }
+}
+
+/*(900px and up) */
+@media only screen and (min-width: 900px) {
+  .imageContainer {
+    padding-top: 4rem;
+  }
+  .tournamentImage {
+    width: 35vw;
+
+    filter: drop-shadow(0px 0px 30px #ffffffbb)
+      drop-shadow(0px 0px 30px #ffffff5c) drop-shadow(0px 0px 20px #ffffffa8)
+      drop-shadow(0px 0px 20px #ffffffa8);
+  }
+}
+
+/* Large devices such as laptops (1024px and up) */
+@media only screen and (min-width: 1024px) {
+}
+
+/* Largest devices such as desktops (1280px and up) */
+@media only screen and (min-width: 1280px) {
+  .imageContainer {
+    padding-top: 6rem;
+  }
+}
+
+/*  (1350px and up) */
+@media only screen and (min-width: 1350px) {
+}

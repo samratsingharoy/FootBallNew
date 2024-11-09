@@ -1,0 +1,316 @@
+:root {
+  --card-height: 1.2rem;
+  --card-gap: 0.5rem;
+}
+.container {
+  display: flex;
+  justify-content: center;
+}
+.wrapper {
+  background: var(--forms-bg);
+  backdrop-filter: blur(2px);
+  border-radius: 0.3rem;
+  padding: 1.5rem 0.5rem;
+  padding-bottom: 5rem;
+  width: 100%;
+}
+.leftContainer {
+  display: flex;
+  justify-content: center;
+  gap: var(--card-gap);
+  flex-wrap: wrap;
+}
+.teamContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.teamWrapper,
+.playerNameContainer,
+.kitContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 0.2rem;
+  height: var(--card-height);
+}
+.playerNameContainer,
+.kitContainer {
+  background-color: var(--forms-selected-bg);
+}
+.teamWrapper {
+  background-color: #f2f2f2;
+  padding: 0.1rem 0.2rem 0 0.2rem;
+}
+.team {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: black;
+  background: radial-gradient(
+    121.11% 50% at 50% 50%,
+    rgba(28, 28, 28, 0.88) 0%,
+    #0d0d0d 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+}
+.nameHeader,
+.kitHeader {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.playersHeaderContainer {
+  margin-bottom: 0.2rem;
+}
+.playerWrapper {
+  display: flex;
+  align-items: center;
+  gap: var(--card-gap);
+}
+.playersContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.playerNameContainer {
+  width: 9rem;
+}
+
+.playerName,
+.kitnum {
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+.kitContainer {
+  width: 3.5rem;
+}
+
+/* --Image ---- */
+.rightContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+.logoImage,
+.jerseyImage {
+  width: 70%;
+}
+.logoImage {
+  border-radius: 0.5rem;
+  border: 2px solid #272727;
+}
+.jerseyImage {
+  border: 1px solid #2c2c2c;
+  border-radius: 0.5rem;
+}
+.jerseyContainer,
+.logoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.changeImageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+}
+.changeText {
+  font-size: 0.6rem;
+  font-weight: 500;
+  color: #d9d9d9;
+}
+.changeIcon {
+  width: 0.7rem;
+}
+
+@media only screen and (min-width: 375px) {
+}
+
+@media only screen and (min-width: 480px) {
+  .wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1.2rem;
+  }
+  .leftContainer {
+    flex-wrap: nowrap;
+  }
+  .logoImage,
+  .jerseyImage {
+    width: 8rem;
+  }
+}
+/* Small devices such as large phones (640px and up) */
+@media only screen and (min-width: 640px) {
+  .rightContainer {
+    margin-top: 0.5rem;
+  }
+  .wrapper {
+    border-radius: 0.7rem;
+    padding: 1.5rem 0.5rem;
+    padding-bottom: 3rem;
+    width: 90%;
+    gap: 5vw;
+  }
+  :root {
+    --card-height: 4vw;
+    --card-gap: 1rem;
+  }
+  .playersContainer {
+    gap: 0.4rem;
+  }
+  .playerNameContainer {
+    width: 25vw;
+  }
+  .kitContainer {
+    width: 8.4vw;
+  }
+  .nameHeader,
+  .kitHeader {
+    font-size: 1.9vw;
+  }
+  .playerName,
+  .kitnum {
+    font-size: 1.5vw;
+  }
+  .playersHeaderContainer {
+    margin-bottom: 0.5rem;
+  }
+  .teamContainer {
+    gap: 0.9rem;
+  }
+  .teamWrapper {
+    width: 10vw;
+  }
+  .team {
+    font-size: 1.3vw;
+  }
+  .logoImage,
+  .jerseyImage {
+    width: 20vw;
+  }
+}
+
+/* Medium devices such as tablets (768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/*(900px and up) */
+@media only screen and (min-width: 900px) {
+  :root {
+    --card-height: 4vw;
+    --card-gap: 1.5rem;
+  }
+  .wrapper {
+    border-radius: 0.9rem;
+    padding: 2rem 0.5rem;
+    padding-bottom: 3rem;
+    width: 90%;
+    gap: 5vw;
+  }
+
+  .team {
+    font-size: 1.2vw;
+  }
+
+  .nameHeader,
+  .kitHeader {
+    font-size: 1.7vw;
+  }
+  .playerName,
+  .kitnum {
+    font-size: 1.3vw;
+  }
+
+  .logoImage,
+  .jerseyImage {
+    width: 22vw;
+  }
+
+  .changeText {
+    font-size: 0.7rem;
+  }
+  .changeIcon {
+    width: 0.7rem;
+  }
+}
+
+/* Large devices such as laptops (1024px and up) */
+@media only screen and (min-width: 1024px) {
+}
+
+/* Largest devices such as desktops (1280px and up) */
+@media only screen and (min-width: 1280px) {
+  .rightContainer {
+    margin-top: 0.5rem;
+  }
+  .wrapper {
+    border-radius: 0.7rem;
+    padding: 2.5rem 0.5rem;
+    padding-bottom: 3.5rem;
+    width: 76%;
+    gap: 3vw;
+  }
+  :root {
+    --card-height: 3.2vw;
+    --card-gap: 1.6rem;
+  }
+  .playersContainer {
+    gap: 0.4rem;
+  }
+  .playerNameContainer {
+    width: 20vw;
+  }
+  .kitContainer {
+    width: 6.4vw;
+  }
+  .nameHeader,
+  .kitHeader {
+    font-size: 1.4vw;
+  }
+  .playerName,
+  .kitnum {
+    font-size: 1.1vw;
+  }
+  .playersHeaderContainer {
+    margin-bottom: 0.5rem;
+  }
+  .teamContainer {
+    gap: 1.1rem;
+  }
+  .teamWrapper {
+    width: 8vw;
+    border-radius: 0.3rem;
+  }
+  .team {
+    font-size: 1vw;
+  }
+  .logoImage,
+  .jerseyImage {
+    width: 20vw;
+  }
+}
+
+/*  (1350px and up) */
+@media only screen and (min-width: 1440px) {
+  .nameHeader,
+  .kitHeader {
+    font-size: 1.3vw;
+  }
+  .playerName,
+  .kitnum {
+    font-size: 1vw;
+  }
+}

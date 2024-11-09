@@ -1,0 +1,178 @@
+.container {
+  width: 80%;
+  background-color: #2c2c2c;
+  border-radius: 0.6rem;
+  overflow: hidden;
+  transition: all 200ms ease-in-out;
+}
+.container:hover {
+  transform: var(--hover-scale);
+}
+.imageContainer {
+  width: 100%;
+}
+.pressImage {
+  width: 100%;
+}
+
+.bottomContainer {
+  padding: 0.5rem;
+  gap: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.title {
+  font-weight: 700;
+  font-size: 0.6rem;
+  margin-bottom: 0.5rem;
+}
+.content {
+  font-size: 0.6rem;
+  font-weight: 400;
+}
+
+.bottomRightWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.storyText {
+  font-weight: 700;
+  font-size: 0.5rem;
+  text-wrap: nowrap;
+}
+
+.storyArrow {
+  width: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 375px) {
+  .title {
+    font-weight: 700;
+    font-size: 3vw;
+    margin-bottom: 0.5rem;
+  }
+  .content {
+    font-size: 2.5vw;
+    font-weight: 400;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .storyText {
+    font-weight: 700;
+    font-size: 0.8rem;
+    text-wrap: nowrap;
+  }
+  .bottomContainer {
+    padding: 1.2rem 0.8rem;
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+/* Small devices such as large phones (640px and up) */
+@media only screen and (min-width: 640px) {
+  .container {
+    width: 100%;
+    height: 100%;
+    background-color: #2c2c2c;
+    border-radius: 0.6rem;
+    overflow: hidden;
+  }
+
+  .pressImage {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+  }
+  .imageContainer {
+    height: 60%;
+  }
+
+  .bottomContainer {
+    padding: 0.6rem 0.6rem;
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .title {
+    font-weight: 700;
+    font-size: 1.6vw;
+    margin-bottom: 0.5rem;
+  }
+  .content {
+    font-size: 1.3vw;
+    font-weight: 400;
+  }
+  .storyText {
+    font-weight: 700;
+    font-size: 0.6rem;
+    text-wrap: nowrap;
+  }
+}
+
+/* Medium devices such as tablets (768px and up) */
+@media only screen and (min-width: 768px) {
+  .pressImage {
+    object-position: top;
+  }
+  .imageContainer {
+    height: 68%;
+  }
+}
+
+/*(900px and up) */
+@media only screen and (min-width: 900px) {
+  .imageContainer {
+    height: 58%;
+  }
+  .bottomContainer {
+    height: 42%;
+  }
+}
+
+/* Large devices such as laptops (1024px and up) */
+@media only screen and (min-width: 1024px) {
+  /* .container:hover {
+    scale: 1.1;
+  } */
+}
+
+/* Largest devices such as desktops (1280px and up) */
+@media only screen and (min-width: 1280px) {
+  .title {
+    font-weight: 700;
+    font-size: 1.3vw;
+    margin-bottom: 0.5rem;
+  }
+  .content {
+    font-size: 1.1vw;
+    font-weight: 400;
+  }
+  .storyText {
+    font-size: 0.8rem;
+  }
+  .storyArrow {
+    width: 1rem;
+  }
+  .imageContainer {
+    height: 65%;
+  }
+  .bottomContainer {
+    height: 35%;
+  }
+}
+
+/*  (1350px and up) */
+@media only screen and (min-width: 1440px) {
+}
