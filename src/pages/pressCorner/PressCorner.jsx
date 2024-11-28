@@ -1,7 +1,7 @@
 import React from "react";
 import Hero from "../../components/pressPage/hero/Hero";
 import PressCardsSection from "../../components/homePage/pressCardsSection/PressCardsSection";
-import SectionTwo from "../../components/aboutPage/sectionTwo/SectionTwo";
+import SectionTwo from "../../components/pressPage/sectionTwo/sectionTwo";
 import SectionThree from "../../components/pressPage/sectionThree/SectionThree";
 import YTSection from "../../components/pressPage/ytSection/YTSection";
 

@@ -27,51 +27,35 @@ const Donations = () => {
 
           <div className={styles.contentContainer}>
             <p className={styles.content}>
-              our generous donation will help us empower young football
-              talent,providing them with the resources and opportunities to
+              Your generous donation will help us empower young football
+              talent, providing them with the resources and opportunities to
               pursue their passion and build a brighter future through the
-              beautiful game
+              beautiful game.
             </p>
-          </div>
+          </div>   
 
-          <div className={styles.contriContainer}>
-            <h4 className={styles.contriText}>Contribution Frequency</h4>
+          {/* Updated hi class usage */}
+          <div className={styles.hi}>
+  <div className={styles.donation}>
+    <div className={styles.kart}>
+      <p className={styles.joke}>₹300</p>
+    </div>
+    <img src="public/images/donation/Donation1.png" alt="" />
+  </div>
+  <div className={styles.donation}>
+    <div className={styles.kart}>
+      <p className={styles.joke}>₹500</p>
+    </div>
+    <img src="public/images/donation/Donation3.png" alt="" />
+  </div>
+  <div className={styles.donation}>
+    <div className={styles.kart}>
+      <p className={styles.joke}>₹700</p>
+    </div>
+    <img src="public/images/donation/Donation2.png" alt="" />
+  </div>
+</div>
 
-            <div className={styles.contriTypeContainer}>
-              <div className={styles.monthlyContainer}>
-                <p className={styles.contriType}>Monthly</p>
-              </div>
-
-              <div className={styles.yearlyContainer}>
-                <p className={styles.contriType}>Yearly</p>
-              </div>
-            </div>
-          </div>
-
-          <div className={styles.amountContainer}>
-            <h4 className={styles.amountText}>
-              Select an amount to contribute
-            </h4>
-
-            <div className={styles.priceContainer}>
-              <div className={styles.amountWrapper}>
-                <p className={styles.amount}>₹100</p>
-              </div>
-
-              <div className={styles.amountWrapper}>
-                <p className={styles.amount}>₹500</p>
-              </div>
-              <div className={styles.amountWrapper}>
-                <p className={styles.amount}>₹1000</p>
-              </div>
-              <div className={styles.amountWrapper}>
-                <p className={styles.amount}>₹5000</p>
-              </div>
-              <div className={styles.enterWrapper}>
-                <p className={styles.enterText}>Enter any amount</p>
-              </div>
-            </div>
-          </div>
 
           <div className={styles.btnContainer}>
             <button className={styles.contriBtn}>Contribute</button>

@@ -10,11 +10,12 @@ const Home = () => {
   return (
     <div className="paddingLeftRight">
       <Hero />
+      <Initiatives />
       <TournamentsSection />
       <MatchCentre />
       <PressCorner />
       <SocialSection />
-      <Initiatives />
+      
     </div>
   );
 };

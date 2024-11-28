@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Hero.module.css";
+import styles from "./C19.module.css";
 import TournamentCard from "../tournamentCard/TournamentCard";
 import { Link } from "react-router-dom";
 
@@ -11,7 +11,7 @@ const tournaments = [
   "Sunday Football",
   "Club Football",
 ];
-const Hero = () => {
+const C19 = () => {
   return (
     <div className={styles.container}>
       <div className={styles.tournamentsContainer}>
@@ -26,8 +26,9 @@ const Hero = () => {
         <div className={styles.hi}>
         <div className={styles.singleLeft}>
           <div className={styles.headerContainer}>
-            <h4 className={styles.header}>Corporate Ball Game</h4>
-            <h4 className={styles.header}>Season 2</h4>
+            <h4 className={styles.header}>BENGAL COLLEGE SHIELD
+            5-A-Side / 7-A-Side</h4>
+            
           </div>
 
           <div className={styles.modlogoContainer}>
@@ -73,4 +74,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default C19;

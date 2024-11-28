@@ -1,0 +1,193 @@
+.container {
+    padding-bottom: 7rem;
+  }
+  .headerContainer {
+    display: flex;
+    background: url(https://s3-alpha-sig.figma.com/img/094a/7011/80cc6893f078a37add87f0bd794bdabf?Expires=1733097600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=nxrJven3qEoSwKCvyCO0f9d1Nov6GZwj9chOxw-UZKxLXke3GHDtZbneQu1bjqgcg6DQjrb3wqMQdSunmMU-eQPHSzuKSilhs-B1MJ8hZmO2JlAvYLrKwXY~8N-Dik~vFKYh~tCRkI6SI9RN5hDaqPSJhdfRdoUGXQEKrobVIfyKxmJRKxjOklFFQFYtlMsvJtWsQY9aL2~Uhk47l4LP9uH2qYJyfWx3z1QrjvPMi2XyiUx~7THj3n4ny2E1F~2x-VwJktXSLItxL0Ak2wydRBkZZ49SE8t4nx88adpjVqMvWe-a-yZbgRZhx8hS4h6QgDnZ3lyQsOO2Hf4VP8vqkA__) lightgray -225.207px 0px / 146.482% 101.08% no-repeat;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7rem;
+  }
+  .headerText {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+  .header {
+    font-weight: 700;
+    font-size: 4.3vw;
+  }
+  
+  .cupImage {
+    height: 5vw;
+    margin: 10px;
+  }
+  .subHeaderContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0.7rem 0;
+    margin-bottom: 1.2rem;
+  }
+  .subCatContentContainer{
+    background: url(https://s3-alpha-sig.figma.com/img/094a/7011/80cc6893f078a37add87f0bd794bdabf?Expires=1733097600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=nxrJven3qEoSwKCvyCO0f9d1Nov6GZwj9chOxw-UZKxLXke3GHDtZbneQu1bjqgcg6DQjrb3wqMQdSunmMU-eQPHSzuKSilhs-B1MJ8hZmO2JlAvYLrKwXY~8N-Dik~vFKYh~tCRkI6SI9RN5hDaqPSJhdfRdoUGXQEKrobVIfyKxmJRKxjOklFFQFYtlMsvJtWsQY9aL2~Uhk47l4LP9uH2qYJyfWx3z1QrjvPMi2XyiUx~7THj3n4ny2E1F~2x-VwJktXSLItxL0Ak2wydRBkZZ49SE8t4nx88adpjVqMvWe-a-yZbgRZhx8hS4h6QgDnZ3lyQsOO2Hf4VP8vqkA__) lightgray -225.207px 0px / 146.482% 101.08% no-repeat;
+    
+  }
+  .subHeader {
+    font-size: 3.7vw;
+    font-weight: 700;
+    position: relative;
+    cursor: pointer;
+  }
+  .subHeader:hover {
+    opacity: 0.7;
+  }
+  .subHeaderWrapper {
+    position: relative;
+  }
+  
+  .underline {
+    position: absolute;
+    width: 100%;
+    height: 0.13rem;
+    background-color: white;
+    left: 0;
+    bottom: -8px;
+    transition: all 0.6s;
+    opacity: 0;
+  }
+  .underline.showunderline {
+    opacity: 1;
+  }
+  
+  .subCatWrapper {
+    opacity: 0;
+    transition: all 1s ease;
+  }
+  .showsubCatWrapper {
+    opacity: 1;
+    transition: all 1s ease;
+  }
+  @media only screen and (min-width: 375px) {
+  }
+  
+  @media only screen and (min-width: 480px) {
+    .subHeaderContainer {
+      margin: 0.9rem 0;
+      margin-bottom: 1.6rem;
+      justify-content: center;
+      gap: 1rem;
+    }
+    .underline {
+      bottom: -11px;
+      height: 0.14rem;
+    }
+    .subHeader {
+      font-size: 3.2vw;
+    }
+    .container {
+      padding-bottom: 10rem;
+    }
+  }
+  /* Small devices such as large phones (640px and up) */
+  @media only screen and (min-width: 640px) {
+    .subHeaderContainer {
+      margin-top: 4vw;
+      margin-bottom: 6.5vw;
+      justify-content: center;
+      gap: 1.7rem;
+    }
+    .header {
+      font-size: 4.1vw;
+    }
+    .cupImage {
+      width: 14vw;
+    }
+    .subHeader {
+      font-size: 2.8vw;
+    }
+    .underline {
+      bottom: -2vw;
+      height: 0.14rem;
+    }
+  }
+  
+  /* Medium devices such as tablets (768px and up) */
+  @media only screen and (min-width: 768px) {
+    .underline {
+      height: 0.17rem;
+    }
+  }
+  
+  /*(900px and up) */
+  @media only screen and (min-width: 900px) {
+    .container {
+      padding-bottom: 13rem;
+    }
+    .header {
+      font-size: 3.9vw;
+    }
+  
+    .cupImage {
+      width: 14vw;
+    }
+  
+    .subHeaderContainer {
+      gap: 2rem;
+    }
+    .underline {
+      height: 0.2rem;
+    }
+    .subHeader {
+      font-size: 2.4vw;
+    }
+  }
+  
+  /* Large devices such as laptops (1024px and up) */
+  @media only screen and (min-width: 1024px) {
+    .subHeaderContainer {
+      margin-top: 3.7vw;
+      margin-bottom: 6vw;
+      gap: 2.3rem;
+    }
+    .subHeader {
+      font-size: 2.2vw;
+    }
+    .underline {
+      bottom: -1.8vw;
+    }
+  }
+  
+  /* Largest devices such as desktops (1280px and up) */
+  @media only screen and (min-width: 1280px) {
+    .container {
+      padding-top: 2rem;
+    }
+    .headerContainer {
+      gap: 2.4rem;
+    }
+    .header {
+      font-size: 3.4vw;
+    }
+  
+    .cupImage {
+      width: 12vw;
+    }
+    .subHeaderContainer {
+      margin-top: 3.7vw;
+      margin-bottom: 4.6vw;
+      gap: 2.6rem;
+    }
+    .subHeader {
+      font-size: 1.8vw;
+    }
+    .underline {
+      height: 0.25rem;
+      bottom: -1.6vw;
+    }
+  }
+  
+  /*  (1350px and up) */
+  @media only screen and (min-width: 1440px) {
+  }
+  

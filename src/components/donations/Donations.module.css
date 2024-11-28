@@ -1,6 +1,65 @@
 .container {
   margin-top: 1rem;
 }
+.hi {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem; /* Adds spacing between the child elements */
+  margin-left: 20px;
+}
+.kart {
+  position: absolute; /* Make it overlap the image */
+  top: -10px; /* Adjust based on your preference */
+  left: 50%;
+  transform: translateX(-50%); /* Center it horizontally */
+  display: flex;
+  padding: 6px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  border-radius: 3px;
+  background: var(
+    --Bg-Color,
+    radial-gradient(121.11% 50% at 50% 50%, rgba(28, 28, 28, 0.88) 0%, #0d0d0d 100%)
+  );
+  z-index: 1; /* Ensure it appears above the image */
+}
+
+.donation {
+  display: flex;
+  height: auto;
+  width: 187.5px;
+  padding: 24px;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  position: relative; /* Make the container a positioning context */
+  border-radius: 6px;
+  background: var(
+    --Forms-bg,
+    linear-gradient(180deg, rgba(255, 255, 255, 0.51) 0%, rgba(153, 153, 153, 0.51) 100%)
+  );
+}
+
+.joke{
+  color: var(--Action-Bt-Color, #FFC700);
+font-family: "League Spartan";
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 100%; /* 18px */
+}
+/* .donation{
+  display: flex;
+width: 187.5px;
+padding: 24px;
+align-items: center;
+justify-content: center;
+gap: 6px;
+  border-radius: 6px;
+background: var(--Forms-bg, linear-gradient(180deg, rgba(255, 255, 255, 0.51) 0%, rgba(153, 153, 153, 0.51) 100%));
+} */
+
 .header {
   font-size: 4.5vw;
   font-weight: 700;
@@ -52,78 +111,6 @@
   gap: 0.5rem;
   margin-top: 0.4rem;
 }
-.monthlyContainer {
-  background: radial-gradient(
-    121.11% 50% at 50% 50%,
-    rgba(28, 28, 28, 0.88) 0%,
-    #0d0d0d 100%
-  );
-
-  padding: 0.2rem;
-
-  border-radius: 0.2rem;
-}
-.monthlyContainer .contriType {
-  color: #ffc700;
-}
-
-.yearlyContainer {
-  background-color: #ffc700;
-  padding: 0.2rem;
-
-  border-radius: 0.2rem;
-  /* height: var(--frequency-height); */
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
-}
-.yearlyContainer .contriType {
-  color: black;
-}
-.contriType {
-  font-weight: 500;
-  font-size: 3.2vw;
-}
-
-.amountContainer {
-  margin-top: 0.6rem;
-}
-
-.priceContainer {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-top: 0.2rem;
-  gap: 0.3rem;
-}
-.amountWrapper {
-  background: radial-gradient(
-    121.11% 50% at 50% 50%,
-    rgba(28, 28, 28, 0.88) 0%,
-    #0d0d0d 100%
-  );
-  padding: 0.3rem 0.3rem 0.2rem 0.3rem;
-  border-radius: 0.2rem;
-}
-.amount {
-  font-weight: 700;
-  font-size: 3.5vw;
-  color: #ffc700;
-}
-.enterWrapper {
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.51) 0%,
-    rgba(153, 153, 153, 0.51) 100%
-  );
-  padding: 0.2rem 0.9rem;
-  border-radius: 0.1rem;
-}
-.enterText {
-  font-weight: 500;
-  font-size: 3.1vw;
-  color: black;
-}
 .btnContainer {
   margin-top: 0.6rem;
   display: flex;
@@ -142,7 +129,6 @@
   border-radius: 0.2rem;
   padding: 0.4rem;
 }
-
 @media only screen and (min-width: 375px) {
   .subHeader {
     font-size: 3.2vw;

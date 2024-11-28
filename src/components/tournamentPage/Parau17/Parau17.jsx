@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Hero.module.css";
+import styles from "./Parau17.module.css";
 import TournamentCard from "../tournamentCard/TournamentCard";
 import { Link } from "react-router-dom";
 
@@ -11,7 +11,7 @@ const tournaments = [
   "Sunday Football",
   "Club Football",
 ];
-const Hero = () => {
+const Parau17 = () => {
   return (
     <div className={styles.container}>
       <div className={styles.tournamentsContainer}>
@@ -26,13 +26,12 @@ const Hero = () => {
         <div className={styles.hi}>
         <div className={styles.singleLeft}>
           <div className={styles.headerContainer}>
-            <h4 className={styles.header}>Corporate Ball Game</h4>
-            <h4 className={styles.header}>Season 2</h4>
+            <h4 className={styles.header}>HOUSING SOCIETIES KOLKATA HOUSIING CUP U17 | 5-A-Side / 7-A-Side</h4>
           </div>
 
           <div className={styles.modlogoContainer}>
             <img
-              src="/images/cupImage.png"
+              src="public\images\u19.jpg"
               className={styles.tournamentLogo}
               alt=""
             />
@@ -45,10 +44,10 @@ const Hero = () => {
 
             <ul className={styles.scheduleList}>
               <li className={styles.item}>
-                Venue: NKDA Football Stadium, New Town
+              Venue: NKDA Football Stadium, New Town
               </li>
               <li className={styles.item}>
-                Dates: June 28th, 29th, and 30th, 2024
+              Dates: June 28th, 29th, and 30th, 2024
               </li>
               <li className={styles.item}>Duration: Three consecutive days</li>
             </ul>
@@ -62,7 +61,7 @@ const Hero = () => {
 
         <div className={styles.logoContainer}>
           <img
-            src="/images/cupImage.png"
+            src="public\images\u19.jpg"
             className={styles.tournamentLogo}
             alt=""
           />
@@ -73,4 +72,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default Parau17;

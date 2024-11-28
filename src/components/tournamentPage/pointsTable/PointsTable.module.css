@@ -7,7 +7,7 @@
   justify-content: center;
 }
 .wrapper {
-  background: var(--forms-bg);
+  background: url(https://s3-alpha-sig.figma.com/img/094a/7011/80cc6893f078a37add87f0bd794bdabf?Expires=1733097600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=nxrJven3qEoSwKCvyCO0f9d1Nov6GZwj9chOxw-UZKxLXke3GHDtZbneQu1bjqgcg6DQjrb3wqMQdSunmMU-eQPHSzuKSilhs-B1MJ8hZmO2JlAvYLrKwXY~8N-Dik~vFKYh~tCRkI6SI9RN5hDaqPSJhdfRdoUGXQEKrobVIfyKxmJRKxjOklFFQFYtlMsvJtWsQY9aL2~Uhk47l4LP9uH2qYJyfWx3z1QrjvPMi2XyiUx~7THj3n4ny2E1F~2x-VwJktXSLItxL0Ak2wydRBkZZ49SE8t4nx88adpjVqMvWe-a-yZbgRZhx8hS4h6QgDnZ3lyQsOO2Hf4VP8vqkA__) lightgray -225.207px 0px / 146.482% 101.08% no-repeat;
   backdrop-filter: blur(2px);
   border-radius: 0.3rem;
   padding: 1.5rem 0.5rem;

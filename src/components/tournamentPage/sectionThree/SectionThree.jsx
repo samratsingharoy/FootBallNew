@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import styles from "./SectionTwo.module.css";
+import styles from "./SectionThree.module.css";
 import Overview from "../overview/Overview";
 import Guidelines from "../guidelines/Guidelines";
 import MatchesMod from "../matches/MatchesMod";
@@ -7,7 +7,7 @@ import PointsTable from "../pointsTable/PointsTable";
 import Teams from "../teams/Teams";
 import Gallery from "../gallery/Gallery";
 import { useGSAP } from "@gsap/react";
-import "./SectionTwo.css";
+import "./SectionThree.css";
 import gsap from "gsap";
 
 const subHeaders = [
@@ -19,7 +19,7 @@ const subHeaders = [
   "Gallery",
 ];
 
-const SectionTwo = () => {
+const SectionThree = () => {
   const [currentSubheader, setCurrentSubheader] = useState("Overview");
   const container = useRef();
   useGSAP(
@@ -36,10 +36,10 @@ const SectionTwo = () => {
     <div className={styles.container}>
       <div className={styles.headerContainer}>
         <div className={styles.imageContainer}>
-          <img src="/images/cupImage.png" className={styles.cupImage} alt="" />
+          <img src="public\images\u19.jpg" className={styles.cupImage} alt="" />
         </div>
         <div className={styles.headerText}>
-          <h4 className={styles.header}>Corporate Ball Game <span>SEASON 2</span></h4>
+          <h4 className={styles.header}>Para Ball Game SEASON 3</h4>
         </div>
       </div>
       
@@ -107,4 +107,4 @@ const SectionTwo = () => {
   );
 };
 
-export default SectionTwo;
+export default SectionThree;

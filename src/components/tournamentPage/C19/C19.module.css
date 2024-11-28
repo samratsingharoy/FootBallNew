@@ -27,7 +27,6 @@
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   border-radius: 0.3rem;
   padding: 20px;
-  margin: 0px;
   width:80%;
 }
 
@@ -45,7 +44,7 @@
 .scheduleHeader {
   margin-bottom: 0.4rem;
   color: #d9d9d9;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 0.9rem;
 }
 .colan {
@@ -79,12 +78,13 @@
 .logoContainer {
   display: none;
 }
-.tournamentsContainer {
-  display: flex;
-  flex-direction: column;
-}
+
 .item{
   font-size: 20px;
+}
+
+.scheduleContainer{
+  height: 100%;
 }
 @media only screen and (min-width: 375px) {
 }
